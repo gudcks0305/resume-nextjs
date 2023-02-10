@@ -12,7 +12,7 @@ const etc: IEtc.Payload = {
     // },
     {
       title: '코드스테이츠 (Code States)',
-      subTitle: 'Backend Software Engineering (41기/24주)',
+      subTitle: 'Backend Software Engineering (41기/24주) ',
       startedAt: '2022-08',
       endedAt: '2023-02',
     },

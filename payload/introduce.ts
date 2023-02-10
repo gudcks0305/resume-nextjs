@@ -4,7 +4,7 @@ import { lastestUpdatedAt } from '../package.json';
 const introduce: IIntroduce.Payload = {
   disable: false,
   contents: [
-    'JAVA & Spring 개발자로 GDSC( Google Developer Student Clubs ) DJU 라는 동아리에서 백엔드 개발자로 내부 서비스를 구축 및 관리 경험이 있습니다.',
+    'JAVA & Spring 개발자로 GDSC ( Google Developer Student Clubs ) DJU 라는 동아리에서 백엔드 개발자로 내부 서비스를 구축 및 관리 경험이 있습니다.',
     '',
     '저는 단순하게 코드를 작성하는 것이 아닌 문제를 해결하는 개발자인 엔지니어가 되고 싶습니다.    ',
     ' 제가 동료 개발자들에 비해 가지고 있는 강점은  문제 해결 능력입니다. 문제 해결 능력은 문제를 정의하는 것부터 시작됩니다.',

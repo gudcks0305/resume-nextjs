@@ -5,7 +5,7 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
-      title: 'Google Developer Student Clubs - Daejin University',
+      title: 'Google Developer Student Clubs : Dae-jin University',
       position: 'MEMBER',
       startedAt: '2021-09',
       endedAt: '2022-12',
