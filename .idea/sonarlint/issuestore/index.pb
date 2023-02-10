@@ -11,20 +11,14 @@ M
 component/article/IArticle.ts,d\c\dc78346aea03eb616008b4727105a016030c178f
 K
 component/article/index.tsx,c\2\c25fcc99c4d433e8ff6a84bda4de155d70bb4e9d
-V
-&component/common/CommonDescription.tsx,c\5\c5a175932d9e8231cc856801317251380925bca1
 N
 component/common/CommonRow.tsx,a\2\a213e0a3ed7f4708bfa235571a24d92ab6af59e2
 R
 "component/common/CommonSection.tsx,c\e\ce4c92b39c3c2a5033f7c89d090384ee8440eba3
 K
 component/common/ICommon.ts,0\6\06f3496f8b1fca47d16c01c09c0b81bd2ce009af
-K
-component/common/IGlobal.ts,5\c\5c21720295e95edaec92b3ce26394598facd84e7
 J
 component/common/index.tsx,5\b\5bcb8d7bab45ebdb799f8e91818d1559627d6b00
-H
-component/common/IRow.ts,6\a\6a953081ef59b292c4bce3adec293de056517f2c
 [
 +component/common/PreProcessingComponent.tsx,8\8\884ad6173a9141920922868668214ea519b5ca11
 I
@@ -75,8 +69,6 @@ M
 component/profile/IProfile.ts,d\c\dc39e8b271063cb2f9ea81f8b6ead77aa8ab0466
 K
 component/project/index.tsx,5\7\57d0515beeb1cad62419c1bfc0d726e59baefb26
-M
-component/project/IProject.ts,d\5\d55c04f286baefcab1cc2895899ed2bc93b56f32
 I
 component/project/row.tsx,f\9\f9f01279e8584ebf3ff55a2900bce9b6b4e79d4d
 I
@@ -85,20 +77,12 @@ I
 component/skill/ISkill.ts,2\0\2015c336a6b8c10d242f1fbc67a270df156769bd
 G
 component/skill/row.tsx,6\6\66c5a6149fbc47baea5a598828fb1a84ef0ae972
->
-pages/_app.tsx,5\5\550528cc072fa7d76d123e2f4303d4ab39daa8e8
 C
 pages/_document.tsx,a\d\ada43e48670fd1ae7318859ac38479e031ea9236
 ?
 pages/index.tsx,b\3\b3357635c26d1b52053382ce7e8a8640d31fedc8
 A
 payload/footer.ts,a\a\aa65a2d44bc129773ecabea1c25fe9c4e41d7d6b
-@
-payload/index.ts,a\b\ab5d237ec5c1856c13e818d89ca3bcfe8dc58635
-E
-payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
-G
-payload/presentation.ts,9\c\9c7544bc49ffa822e2ea9aaa1ce47d9e50e949aa
 @
 payload/skill.ts,e\e\eed69209a82f4c14c9e7a258a88d432c51ce2e54
 =
@@ -109,8 +93,6 @@ A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 =
 next-env.d.ts,7\9\7948598afd6f2aa542f1b55d7b6f077a70937e77
->
-next.config.js,8\1\811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
 7
 LICENSE,0\3\0398ccd0f49298b10a3d76a47800d2ebecd49859
 :
