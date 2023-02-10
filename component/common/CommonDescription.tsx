@@ -93,7 +93,6 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
       );
     }
     if (postImage) {
-      console.log('postImage', postImage);
       return (
         <li style={getFontWeight(weight)}>
           {content}

@@ -7,8 +7,6 @@ D
 .circleci/config.yml,f\d\fd5da61396a8376845bee5cdf71aaf3c98a888ae
 E
 .vscode/settings.json,8\9\89aa447020cdcb580cea0495694d46a55941edbe
-M
-component/article/IArticle.ts,d\c\dc78346aea03eb616008b4727105a016030c178f
 K
 component/article/index.tsx,c\2\c25fcc99c4d433e8ff6a84bda4de155d70bb4e9d
 N
@@ -21,8 +19,6 @@ J
 component/common/index.tsx,5\b\5bcb8d7bab45ebdb799f8e91818d1559627d6b00
 [
 +component/common/PreProcessingComponent.tsx,8\8\884ad6173a9141920922868668214ea519b5ca11
-I
-component/common/Style.ts,3\e\3ed881ad125a752cc8e764946a020688fcfc2ef7
 H
 component/common/Util.ts,0\2\02bca0c12b02e92710fa92edd5da40ed18a416fb
 Q
@@ -77,12 +73,6 @@ I
 component/skill/ISkill.ts,2\0\2015c336a6b8c10d242f1fbc67a270df156769bd
 G
 component/skill/row.tsx,6\6\66c5a6149fbc47baea5a598828fb1a84ef0ae972
-C
-pages/_document.tsx,a\d\ada43e48670fd1ae7318859ac38479e031ea9236
-?
-pages/index.tsx,b\3\b3357635c26d1b52053382ce7e8a8640d31fedc8
-A
-payload/footer.ts,a\a\aa65a2d44bc129773ecabea1c25fe9c4e41d7d6b
 @
 payload/skill.ts,e\e\eed69209a82f4c14c9e7a258a88d432c51ce2e54
 =
@@ -111,3 +101,17 @@ EXAMPLE.md,6\3\632f6478e3c5fdd69b76080463dee4ed0312da04
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+>
+next.config.js,8\1\811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
+<
+package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
+G
+payload/presentation.ts,9\c\9c7544bc49ffa822e2ea9aaa1ce47d9e50e949aa
+D
+payload/education.ts,3\6\3615e8fc79103ae08b76b11d10a0fc44425d3df8
+E
+payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
+M
+component/project/IProject.ts,d\5\d55c04f286baefcab1cc2895899ed2bc93b56f32
+H
+component/common/IRow.ts,6\a\6a953081ef59b292c4bce3adec293de056517f2c
