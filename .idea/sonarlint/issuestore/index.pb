@@ -9,12 +9,8 @@ E
 .vscode/settings.json,8\9\89aa447020cdcb580cea0495694d46a55941edbe
 K
 component/article/index.tsx,c\2\c25fcc99c4d433e8ff6a84bda4de155d70bb4e9d
-N
-component/common/CommonRow.tsx,a\2\a213e0a3ed7f4708bfa235571a24d92ab6af59e2
 R
 "component/common/CommonSection.tsx,c\e\ce4c92b39c3c2a5033f7c89d090384ee8440eba3
-K
-component/common/ICommon.ts,0\6\06f3496f8b1fca47d16c01c09c0b81bd2ce009af
 J
 component/common/index.tsx,5\b\5bcb8d7bab45ebdb799f8e91818d1559627d6b00
 [
@@ -39,10 +35,6 @@ K
 component/footer/IFooter.ts,c\b\cb3ce4747fd32478f08f00f5eabe4ea5f8751010
 J
 component/footer/index.tsx,2\7\278ba59c95e488e1ae4687747fe3896089b1e910
-Q
-!component/introduce/IIntroduce.ts,1\c\1ccf9b78c064a8aff0c6d140ba5676f99c63e421
-M
-component/introduce/index.tsx,2\c\2c5577232d921f071e0a966eca78ae9265b0a231
 N
 component/openSource/index.tsx,9\f\9fd0d761566ca89664c2fc8acca3783a78f78d00
 S
@@ -61,20 +53,14 @@ K
 component/profile/image.tsx,3\0\304e1884a97294cbea00ca2dde3560d1c28b9bd3
 K
 component/profile/index.tsx,8\f\8f124c2417609e2aa2b22bae73f56034c9cce613
-M
-component/profile/IProfile.ts,d\c\dc39e8b271063cb2f9ea81f8b6ead77aa8ab0466
 K
 component/project/index.tsx,5\7\57d0515beeb1cad62419c1bfc0d726e59baefb26
-I
-component/project/row.tsx,f\9\f9f01279e8584ebf3ff55a2900bce9b6b4e79d4d
 I
 component/skill/index.tsx,8\6\86a58c2cd550e401d6bd0ee81e0393ea1680c1a5
 I
 component/skill/ISkill.ts,2\0\2015c336a6b8c10d242f1fbc67a270df156769bd
 G
 component/skill/row.tsx,6\6\66c5a6149fbc47baea5a598828fb1a84ef0ae972
-@
-payload/skill.ts,e\e\eed69209a82f4c14c9e7a258a88d432c51ce2e54
 =
 tsconfig.json,6\1\61ebb9fd6e8cf9082658121d5d81e297791dacd0
 9
@@ -105,13 +91,3 @@ EXAMPLE.md,6\3\632f6478e3c5fdd69b76080463dee4ed0312da04
 next.config.js,8\1\811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
 <
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
-G
-payload/presentation.ts,9\c\9c7544bc49ffa822e2ea9aaa1ce47d9e50e949aa
-D
-payload/education.ts,3\6\3615e8fc79103ae08b76b11d10a0fc44425d3df8
-E
-payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
-M
-component/project/IProject.ts,d\5\d55c04f286baefcab1cc2895899ed2bc93b56f32
-H
-component/common/IRow.ts,6\a\6a953081ef59b292c4bce3adec293de056517f2c

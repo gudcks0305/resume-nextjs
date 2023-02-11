@@ -26,6 +26,8 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
     DateTime.local().diff(latestUpdated).milliseconds / 1000 / 60 / 60 / 24,
   );
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // @ts-ignore
   return (
     <div className="mt-5">
       <Row>
@@ -35,7 +37,11 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
         <Col sm={12} md={9}>
           {payload.contents.map((content, index) => (
             <span key={index.toString()}>
-              {content}
+              {content.content}
+              {/* eslint-disable-next-line jsx-a11y/alt-text */}
+              {content.postImage == null ? null : (
+                <img src={content.postImage} style={{ margin: '10px' , marginBottom : '30px'}} alt={index} />
+              )}
               <br />
             </span>
           ))}
