@@ -40,7 +40,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
               {content.content}
               {/* eslint-disable-next-line jsx-a11y/alt-text */}
               {content.postImage == null ? null : (
-                <img src={content.postImage} style={{ margin: '10px' , marginBottom : '30px'}} />
+                <img src={content.postImage} style={{ margin: '10px', marginBottom: '30px' }} />
               )}
               <br />
             </span>
