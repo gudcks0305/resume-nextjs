@@ -101,6 +101,7 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
             <img
               src={postImage}
               alt={postImage}
+
               style={{ width: '40%', textAlign: 'center', borderRadius: '10%', margin: '10px' }}
             />
           </div>
