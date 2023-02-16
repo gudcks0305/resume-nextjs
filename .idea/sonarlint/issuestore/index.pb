@@ -95,10 +95,6 @@ B
 pages/_app.tsx,5\5\550528cc072fa7d76d123e2f4303d4ab39daa8e8
 M
 component/profile/IProfile.ts,d\c\dc39e8b271063cb2f9ea81f8b6ead77aa8ab0466
-K
-component/common/ICommon.ts,0\6\06f3496f8b1fca47d16c01c09c0b81bd2ce009af
-D
-payload/education.ts,3\6\3615e8fc79103ae08b76b11d10a0fc44425d3df8
 E
 payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
 B
@@ -107,10 +103,6 @@ B
 payload/skill.ts,e\e\eed69209a82f4c14c9e7a258a88d432c51ce2e54
 E
 payload/experience.ts,a\1\a1123326702d9ef3f489bec828c4467821939f0a
-G
-payload/presentation.ts,9\c\9c7544bc49ffa822e2ea9aaa1ce47d9e50e949aa
-Q
-!component/introduce/IIntroduce.ts,1\c\1ccf9b78c064a8aff0c6d140ba5676f99c63e421
 K
 component/project/index.tsx,5\7\57d0515beeb1cad62419c1bfc0d726e59baefb26
 J
