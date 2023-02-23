@@ -95,8 +95,6 @@ B
 pages/_app.tsx,5\5\550528cc072fa7d76d123e2f4303d4ab39daa8e8
 M
 component/profile/IProfile.ts,d\c\dc39e8b271063cb2f9ea81f8b6ead77aa8ab0466
-E
-payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
 B
 payload/article.ts,e\e\eef3fd8e4adb3380ef644a981219ee4716093ce0
 @
@@ -113,3 +111,9 @@ M
 component/project/IProject.ts,d\5\d55c04f286baefcab1cc2895899ed2bc93b56f32
 H
 component/common/IRow.ts,6\a\6a953081ef59b292c4bce3adec293de056517f2c
+D
+payload/education.ts,3\6\3615e8fc79103ae08b76b11d10a0fc44425d3df8
+K
+component/common/ICommon.ts,0\6\06f3496f8b1fca47d16c01c09c0b81bd2ce009af
+Q
+!component/introduce/IIntroduce.ts,1\c\1ccf9b78c064a8aff0c6d140ba5676f99c63e421
