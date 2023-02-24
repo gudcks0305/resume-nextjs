@@ -117,3 +117,7 @@ K
 component/common/ICommon.ts,0\6\06f3496f8b1fca47d16c01c09c0b81bd2ce009af
 Q
 !component/introduce/IIntroduce.ts,1\c\1ccf9b78c064a8aff0c6d140ba5676f99c63e421
+G
+payload/presentation.ts,9\c\9c7544bc49ffa822e2ea9aaa1ce47d9e50e949aa
+E
+payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
