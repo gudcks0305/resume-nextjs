@@ -30,7 +30,7 @@ const introduce: IIntroduce.Payload = {
       content: ' 이런 강점이 있었기 때문에 현재 동료 개발자들에 비해 빠른 성장을 이루고 있습니다. ',
     },
     {
-      content: '',
+      content: ' 또한, 저는 동료 개발자들에 비해 뛰어난 커뮤니케이션 능력을 가지고 있습니다.',
     },
     {
       content:
