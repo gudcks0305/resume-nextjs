@@ -129,9 +129,9 @@ const Studying: ISkill.Skill = {
     {
       title: 'Querydsl',
     },
-    // {
-    //   title: 'Nginx',
-    // },
+    {
+      title: 'Kafka',
+    },
     {
       title: 'Docker',
     },
