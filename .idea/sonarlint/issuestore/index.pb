@@ -59,10 +59,6 @@ G
 component/skill/row.tsx,6\6\66c5a6149fbc47baea5a598828fb1a84ef0ae972
 =
 tsconfig.json,6\1\61ebb9fd6e8cf9082658121d5d81e297791dacd0
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-A
-package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 =
 next-env.d.ts,7\9\7948598afd6f2aa542f1b55d7b6f077a70937e77
 7
@@ -85,8 +81,6 @@ EXAMPLE.md,6\3\632f6478e3c5fdd69b76080463dee4ed0312da04
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 >
 next.config.js,8\1\811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
-<
-package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
 B
 payload/_global.ts,f\3\f38cacd6b5401d362c4196bacab3c3fc79a2110f
 ?
@@ -97,8 +91,6 @@ M
 component/profile/IProfile.ts,d\c\dc39e8b271063cb2f9ea81f8b6ead77aa8ab0466
 B
 payload/article.ts,e\e\eef3fd8e4adb3380ef644a981219ee4716093ce0
-@
-payload/skill.ts,e\e\eed69209a82f4c14c9e7a258a88d432c51ce2e54
 E
 payload/experience.ts,a\1\a1123326702d9ef3f489bec828c4467821939f0a
 K
@@ -121,21 +113,3 @@ G
 payload/presentation.ts,9\c\9c7544bc49ffa822e2ea9aaa1ce47d9e50e949aa
 E
 payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
-V
-&component/common/CommonDescription.tsx,c\5\c5a175932d9e8231cc856801317251380925bca1
-M
-component/introduce/index.tsx,2\c\2c5577232d921f071e0a966eca78ae9265b0a231
-@
-payload/index.ts,a\b\ab5d237ec5c1856c13e818d89ca3bcfe8dc58635
-I
-component/project/row.tsx,f\9\f9f01279e8584ebf3ff55a2900bce9b6b4e79d4d
-B
-payload/profile.ts,9\4\94bf6601d5fb53b0076454758360fdbf4a8820c0
-I
-component/common/Style.ts,3\e\3ed881ad125a752cc8e764946a020688fcfc2ef7
-B
-payload/project.ts,b\1\b17df2ea3a036d08dd3451018ea7c737dd0f5aa0
->
-payload/etc.ts,1\e\1e06b1b10ae9fbbb48e0f139cd1adee48a047926
-D
-payload/introduce.ts,9\3\93a4b403aebf55bae2d7c29056dc13eab4a78aa0
