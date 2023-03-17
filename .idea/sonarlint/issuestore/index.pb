@@ -29,8 +29,6 @@ N
 component/experience/index.tsx,4\4\448076b4a3524d586c9207edaaea953fd39ca85b
 L
 component/experience/row.tsx,f\4\f45ad3ad1f8c54c51fe9559ba92003cb721e4797
-K
-component/footer/IFooter.ts,c\b\cb3ce4747fd32478f08f00f5eabe4ea5f8751010
 J
 component/footer/index.tsx,2\7\278ba59c95e488e1ae4687747fe3896089b1e910
 N
@@ -81,18 +79,8 @@ EXAMPLE.md,6\3\632f6478e3c5fdd69b76080463dee4ed0312da04
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 >
 next.config.js,8\1\811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
-B
-payload/_global.ts,f\3\f38cacd6b5401d362c4196bacab3c3fc79a2110f
-?
-docs/index.html,8\c\8c0d6b0dca5817118d2f528acb81b643d000c69a
->
-pages/_app.tsx,5\5\550528cc072fa7d76d123e2f4303d4ab39daa8e8
 M
 component/profile/IProfile.ts,d\c\dc39e8b271063cb2f9ea81f8b6ead77aa8ab0466
-B
-payload/article.ts,e\e\eef3fd8e4adb3380ef644a981219ee4716093ce0
-E
-payload/experience.ts,a\1\a1123326702d9ef3f489bec828c4467821939f0a
 K
 component/project/index.tsx,5\7\57d0515beeb1cad62419c1bfc0d726e59baefb26
 J
@@ -103,13 +91,39 @@ M
 component/project/IProject.ts,d\5\d55c04f286baefcab1cc2895899ed2bc93b56f32
 H
 component/common/IRow.ts,6\a\6a953081ef59b292c4bce3adec293de056517f2c
-D
-payload/education.ts,3\6\3615e8fc79103ae08b76b11d10a0fc44425d3df8
 K
 component/common/ICommon.ts,0\6\06f3496f8b1fca47d16c01c09c0b81bd2ce009af
 Q
 !component/introduce/IIntroduce.ts,1\c\1ccf9b78c064a8aff0c6d140ba5676f99c63e421
-G
-payload/presentation.ts,9\c\9c7544bc49ffa822e2ea9aaa1ce47d9e50e949aa
+I
+component/project/row.tsx,f\9\f9f01279e8584ebf3ff55a2900bce9b6b4e79d4d
+I
+component/common/Style.ts,3\e\3ed881ad125a752cc8e764946a020688fcfc2ef7
+A
+package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+V
+&component/common/CommonDescription.tsx,c\5\c5a175932d9e8231cc856801317251380925bca1
+M
+component/introduce/index.tsx,2\c\2c5577232d921f071e0a966eca78ae9265b0a231
+K
+component/footer/IFooter.ts,c\b\cb3ce4747fd32478f08f00f5eabe4ea5f8751010
+>
+pages/_app.tsx,5\5\550528cc072fa7d76d123e2f4303d4ab39daa8e8
+C
+pages/_document.tsx,a\d\ada43e48670fd1ae7318859ac38479e031ea9236
+?
+docs/index.html,8\c\8c0d6b0dca5817118d2f528acb81b643d000c69a
+D
+payload/education.ts,3\6\3615e8fc79103ae08b76b11d10a0fc44425d3df8
+B
+payload/_global.ts,f\3\f38cacd6b5401d362c4196bacab3c3fc79a2110f
 E
 payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
+D
+payload/introduce.ts,9\3\93a4b403aebf55bae2d7c29056dc13eab4a78aa0
+A
+payload/footer.ts,a\a\aa65a2d44bc129773ecabea1c25fe9c4e41d7d6b
+E
+payload/experience.ts,a\1\a1123326702d9ef3f489bec828c4467821939f0a

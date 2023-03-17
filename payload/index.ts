@@ -37,7 +37,6 @@ const Payload: Payload = {
   education,
   etc,
   footer,
-
   _global,
 };
 
