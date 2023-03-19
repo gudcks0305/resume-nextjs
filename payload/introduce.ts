@@ -42,7 +42,7 @@ const introduce: IIntroduce.Payload = {
       postImage: 'https://ghchart.rshah.org/219138/gudcks0305',
     },
   ],
-  sign: 'Yoo Hyung Chan',
+  sign: 'Yoo Hyeong Chan',
   // sign: packageJson.author.name,
   // latestUpdated: '2023-02-07',
   latestUpdated: lastestUpdatedAt,
