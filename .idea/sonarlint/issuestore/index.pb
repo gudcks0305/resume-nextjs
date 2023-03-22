@@ -99,8 +99,6 @@ I
 component/project/row.tsx,f\9\f9f01279e8584ebf3ff55a2900bce9b6b4e79d4d
 I
 component/common/Style.ts,3\e\3ed881ad125a752cc8e764946a020688fcfc2ef7
-A
-package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 V
