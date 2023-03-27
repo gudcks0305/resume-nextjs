@@ -113,8 +113,6 @@ C
 pages/_document.tsx,a\d\ada43e48670fd1ae7318859ac38479e031ea9236
 ?
 docs/index.html,8\c\8c0d6b0dca5817118d2f528acb81b643d000c69a
-D
-payload/education.ts,3\6\3615e8fc79103ae08b76b11d10a0fc44425d3df8
 E
 payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
 A
