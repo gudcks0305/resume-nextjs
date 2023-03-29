@@ -1,4 +1,4 @@
-import { faBlog, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBlog, faEnvelope, faPhone , faMoneyBill } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import image from '../asset/preview.jpg';
 import { IProfile } from '../component/profile/IProfile';
@@ -32,10 +32,10 @@ const profile: IProfile.Payload = {
       link: 'https://velog.io/@gudcks0305',
       icon: faBlog,
     },
-    // {
-    //   link: 'https://www.facebook.com/iu.loen',
-    //   icon: faFacebook,
-    // },
+    {
+      title: '희망 연봉 : 38,000,000',
+      icon: faMoneyBill,
+    },
     // {
     //   title: 'YouTube',
     //   link: 'https://www.youtube.com/channel/UC3SyT4_WLHzN7JmHQwKQZww',
