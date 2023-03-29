@@ -17,6 +17,13 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             { content: '[배포링크]:', postHref: 'https://yata-tau.vercel.app/' },
+            {
+              content: `
+                [테스트 계정]
+                아이디 : test1@gmail.com,
+                비밀번호 : password
+                `,
+            },
             { content: '[깃헙레포]:', postHref: 'https://github.com/gudcks0305/seb41_main_021' },
             {
               content: '맡은 역할',

@@ -117,5 +117,5 @@ E
 payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
 A
 payload/footer.ts,a\a\aa65a2d44bc129773ecabea1c25fe9c4e41d7d6b
-E
-payload/experience.ts,a\1\a1123326702d9ef3f489bec828c4467821939f0a
+@
+payload/skill.ts,e\e\eed69209a82f4c14c9e7a258a88d432c51ce2e54
