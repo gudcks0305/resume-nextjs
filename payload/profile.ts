@@ -32,10 +32,10 @@ const profile: IProfile.Payload = {
       link: 'https://velog.io/@gudcks0305',
       icon: faBlog,
     },
-    {
-      title: '희망 연봉 : 38,000,000',
-      icon: faMoneyBill,
-    },
+    // {
+    //   title: '희망 연봉 : 38,000,000',
+    //   icon: faMoneyBill,
+    // },
     // {
     //   title: 'YouTube',
     //   link: 'https://www.youtube.com/channel/UC3SyT4_WLHzN7JmHQwKQZww',
