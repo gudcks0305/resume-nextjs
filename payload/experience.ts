@@ -5,6 +5,14 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
+      title: '그릿스탠다드',
+      position: 'BACKEND DEVELOPER',
+      startedAt: '2023-04',
+      endedAt: '',
+      descriptions: ['ING'],
+      // skillKeywords: ['Node.js', 'MySQL', 'AWS'],
+    },
+    {
       title: 'Google Developer Student Clubs : Dae-jin University',
       position: 'MEMBER',
       startedAt: '2021-09',
