@@ -105,19 +105,11 @@ V
 &component/common/CommonDescription.tsx,c\5\c5a175932d9e8231cc856801317251380925bca1
 M
 component/introduce/index.tsx,2\c\2c5577232d921f071e0a966eca78ae9265b0a231
-K
-component/footer/IFooter.ts,c\b\cb3ce4747fd32478f08f00f5eabe4ea5f8751010
 >
 pages/_app.tsx,5\5\550528cc072fa7d76d123e2f4303d4ab39daa8e8
 C
 pages/_document.tsx,a\d\ada43e48670fd1ae7318859ac38479e031ea9236
 ?
 docs/index.html,8\c\8c0d6b0dca5817118d2f528acb81b643d000c69a
-E
-payload/openSource.ts,8\f\8ffefd86e88d87dd44aa3d1ab2bff00802e040cb
-A
-payload/footer.ts,a\a\aa65a2d44bc129773ecabea1c25fe9c4e41d7d6b
 @
 payload/skill.ts,e\e\eed69209a82f4c14c9e7a258a88d432c51ce2e54
-D
-payload/introduce.ts,9\3\93a4b403aebf55bae2d7c29056dc13eab4a78aa0
