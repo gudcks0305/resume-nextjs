@@ -51,8 +51,6 @@ K
 component/profile/index.tsx,8\f\8f124c2417609e2aa2b22bae73f56034c9cce613
 I
 component/skill/index.tsx,8\6\86a58c2cd550e401d6bd0ee81e0393ea1680c1a5
-I
-component/skill/ISkill.ts,2\0\2015c336a6b8c10d242f1fbc67a270df156769bd
 G
 component/skill/row.tsx,6\6\66c5a6149fbc47baea5a598828fb1a84ef0ae972
 =
@@ -111,5 +109,5 @@ C
 pages/_document.tsx,a\d\ada43e48670fd1ae7318859ac38479e031ea9236
 ?
 docs/index.html,8\c\8c0d6b0dca5817118d2f528acb81b643d000c69a
-@
-payload/skill.ts,e\e\eed69209a82f4c14c9e7a258a88d432c51ce2e54
+K
+component/footer/IFooter.ts,c\b\cb3ce4747fd32478f08f00f5eabe4ea5f8751010
