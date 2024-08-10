@@ -3,12 +3,12 @@ import introduce from './introduce';
 import skill from './skill';
 import experience from './experience';
 import openSource from './openSource';
-import project from './project';
 import presentation from './presentation';
 import education from './education';
 import article from './article';
 import etc from './etc';
 import footer from './footer';
+import project from './project';
 
 import { _global } from './_global';
 

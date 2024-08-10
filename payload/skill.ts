@@ -39,14 +39,6 @@ const backend: ISkill.Skill = {
       title: 'Nginx',
       // level: 2,
     },
-    {
-      title: 'AWS EC2',
-      // level: 2,
-    },
-    {
-      title: 'Oracle Cloud Instance',
-      // level: 1,
-    },
     // {
     //   title: 'Querydsl',
     //   // level: 1,
@@ -127,20 +119,74 @@ const Studying: ISkill.Skill = {
   category: 'Studying',
   items: [
     {
-      title: 'Querydsl',
+      title: 'Kubernetes',
     },
     {
-      title: 'Kafka',
+      title: 'AWS',
     },
     {
-      title: 'Docker',
+      title: 'Clean Code',
+    },
+  ],
+};
+
+const Infrastructure: ISkill.Skill = {
+  category: 'Infrastructure',
+  items: [
+    {
+      title: '공식 문서를 보고  구축 할 수 있는 수준',
+      // level: 2,
+    },
+    {
+      title: 'Kubernetes',
+      // level: 2,
+    },
+    {
+      title: 'ArgoCD',
+      // level: 2,
+    },
+    {
+      title: 'FluentBit',
+      // level: 2,
+    },
+    {
+      title: 'AWS CloudWatch',
+      // level: 2,
+    },
+    {
+      title: 'AWS EC2',
+      // level: 2,
+    },
+    {
+      title: 'AWS VPC',
+      // level: 2,
+    },
+    {
+      title: 'AWS EKS',
+      // level: 2,
+    },
+    {
+      title: 'AWS S3',
+      // level: 2,
+    },
+    {
+      title: 'AWS Lambda',
+      // level: 2,
+    },
+    {
+      title: 'AWS OpenSearch',
+      // level: 2,
+    },
+    {
+      title: 'Oracle Cloud Kubernetes (OKE)',
+      // level: 1,
     },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, database, etc, Studying],
+  skills: [backend, Infrastructure, database, etc, Studying],
   // tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 
