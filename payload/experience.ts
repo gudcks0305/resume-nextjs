@@ -1,30 +1,1 @@
-import { IExperience } from '../component/experience/IExperience';
-
-const experience: IExperience.Payload = {
-  disable: false,
-  disableTotalPeriod: false,
-  list: [
-    {
-      title: '그릿스탠다드',
-      position: 'BACKEND DEVELOPER',
-      startedAt: '2023-04',
-      endedAt: '',
-      descriptions: ['ING'],
-      // skillKeywords: ['Node.js', 'MySQL', 'AWS'],
-    },
-    {
-      title: 'Google Developer Student Clubs : Dae-jin University',
-      position: 'MEMBER',
-      startedAt: '2021-09',
-      endedAt: '2022-12',
-      descriptions: [
-        'GOOGLE : 이 프로그램은 학생들이 개발/리더십 능력을 키울 수 있도록 지원하는 프로그램입니다. 기술적 성장을 위한 교육자료를 제공하고 리더십 개발을 위한 다양한 활동들을 지원합니다.',
-        '구글 I/O 시청 이벤트를 참여하여 차세대 미래에 중요시 여겨지는 기술 동향을 파악.',
-        '타 GDSC 와 연합 활동으로 커리어 세션 등을 운영 스태프로 참가',
-      ],
-      // skillKeywords: ['Node.js', 'MySQL', 'AWS'],
-    },
-  ],
-};
-
-export default experience;
+import { IExperience } from '../component/experience/IExperience';const experience: IExperience.Payload = {  disable: false,  disableTotalPeriod: false,  list: [    {      title: '그릿스탠다드',      position: 'BACKEND DEVELOPER',      startedAt: '2023-04',      endedAt: '',      descriptions: [        '물류 플랫폼 서비스의 웹 서비스 구축',        '인프라 운영',        '메일 시스템 구축',        '사내 물류 담당자를 위한 ERP 시스템 개발',      ],      skillKeywords: ['Java', 'Spring', 'Kubernetes', 'MySQL', 'AWS', 'Python', 'FastAPI'],    },  ],};export default experience;

@@ -28,10 +28,10 @@ const profile: IProfile.Payload = {
       link: 'https://github.com/gudcks0305',
       icon: faGithub,
     },
-    {
+    /*    {
       link: 'https://velog.io/@gudcks0305',
       icon: faBlog,
-    },
+    }, */
     // {
     //   title: '희망 연봉 : 38,000,000',
     //   icon: faMoneyBill,

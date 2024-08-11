@@ -17,6 +17,13 @@ const etc: IEtc.Payload = {
       endedAt: '2023-02',
     },
     {
+      title: 'Google Developer Student Clubs : Dae-jin University',
+      subTitle:
+        'GOOGLE : 이 프로그램은 학생들이 개발/리더십 능력을 키울 수 있도록 지원 하는 프로그램 입니다. \n기술적 성장을 위한 교육 자료를 제공하고 리더십 개발을 위한 다양한 활동 들을 지원 합니다. 구글 I/O 시청 이벤트를 참여하여 차세대 미래에 중요시 여겨지는 기술 동향을 파악.  타 GDSC 와 연합 활동으로 커리어 세션 등을 운영 스태프로 참가',
+      startedAt: '2021-09',
+      endedAt: '2022-12',
+    },
+    {
       title: '정보처리기사',
       subTitle: '자격증',
       startedAt: '2022-06',
