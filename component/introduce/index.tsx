@@ -41,6 +41,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
               {/* eslint-disable-next-line jsx-a11y/alt-text */}
               {content.postImage == null ? null : (
                 <img
+                  alt=""
                   src={content.postImage}
                   style={{ margin: '10px', marginBottom: '30px', width: '100%' }}
                 />
