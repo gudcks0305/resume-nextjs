@@ -12,7 +12,7 @@ export const gdscBlog: IProject.Item = {
       postImage: image2,
       weight: 'MEDIUM',
       descriptions: [
-        { content: '[배포링크]:', postHref: 'https://blog.gdsc-dju.com/' },
+        // { content: '[배포링크]:', postHref: 'https://blog.gdsc-dju.com/' },
         {
           content: '[깃헙레포]:',
           postHref: 'https://github.com/GDSC-Daejin/GDSC-WEB-BackEnd',
