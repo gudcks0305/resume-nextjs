@@ -5,16 +5,18 @@ import { Style } from './Style';
 
 export function CommonSection({ title, children }: PropsWithChildren<{ title: string }>) {
   return (
-    <div className="mt-5">
+    <div className="mt-2">
       <EmptyRowCol>
         <Row className="pb-3">
           <Col>
-            <h2 style={Style.blue}>
+            <h3 style={Style.blue}>
               <span>{title}</span>
-            </h2>
+            </h3>
           </Col>
         </Row>
-        {children}
+        <div className="fs-1">
+          {children}
+        </div>
       </EmptyRowCol>
     </div>
   );
