@@ -134,10 +134,6 @@ const Infrastructure: ISkill.Skill = {
   category: 'Infrastructure',
   items: [
     {
-      title: '공식 문서를 보고  구축 할 수 있는 수준',
-      // level: 2,
-    },
-    {
       title: 'Kubernetes',
       // level: 2,
     },
