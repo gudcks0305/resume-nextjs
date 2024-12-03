@@ -9,14 +9,12 @@ export function CommonSection({ title, children }: PropsWithChildren<{ title: st
       <EmptyRowCol>
         <Row className="pb-3">
           <Col>
-            <h3 style={Style.blue}>
+            <h4 style={Style.blue}>
               <span>{title}</span>
-            </h3>
+            </h4>
           </Col>
         </Row>
-        <div className="fs-1">
-          {children}
-        </div>
+        <div className="fs-1">{children}</div>
       </EmptyRowCol>
     </div>
   );

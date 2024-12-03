@@ -25,10 +25,10 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
       <EmptyRowCol>
         <Row className="pb-3">
           <Col>
-            <h2>
+            <h4>
               <span style={Style.blue}>SKILL</span>
               {createTooltip(payload.tooltip)}
-            </h2>
+            </h4>
           </Col>
         </Row>
         {payload.skills.map((skill, index) => (
