@@ -1,5 +1,4 @@
 import { IProject } from '../../component/project/IProject';
-import image2 from '../../asset/img.png';
 
 export const gdscBlog: IProject.Item = {
   title: 'GDSC_TECH_BLOG : GDSC 기술 블로그 프로젝트',
@@ -9,7 +8,6 @@ export const gdscBlog: IProject.Item = {
   descriptions: [
     {
       content: '[팀장, 백엔드]: Spring, SpringBoot, Mysql, Nginx, AWS(EC2)',
-      postImage: image2,
       weight: 'MEDIUM',
       descriptions: [
         // { content: '[배포링크]:', postHref: 'https://blog.gdsc-dju.com/' },
