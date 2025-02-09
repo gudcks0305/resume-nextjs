@@ -38,5 +38,4 @@ export const gdscBlog: IProject.Item = {
       ],
     },
   ],
-  image: image2,
 };
