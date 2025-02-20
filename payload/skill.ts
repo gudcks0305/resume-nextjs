@@ -39,6 +39,10 @@ const backend: ISkill.Skill = {
       title: 'Nginx',
       // level: 2,
     },
+    {
+      title: 'Python FastAPI',
+      // level: 2,
+    },
     // {
     //   title: 'Querydsl',
     //   // level: 1,
@@ -125,7 +129,7 @@ const Studying: ISkill.Skill = {
       title: 'AWS',
     },
     {
-      title: 'Clean Code',
+      title: 'Go language',
     },
   ],
 };
@@ -139,10 +143,6 @@ const Infrastructure: ISkill.Skill = {
     },
     {
       title: 'ArgoCD',
-      // level: 2,
-    },
-    {
-      title: 'FluentBit',
       // level: 2,
     },
     {
@@ -167,10 +167,6 @@ const Infrastructure: ISkill.Skill = {
     },
     {
       title: 'AWS Lambda',
-      // level: 2,
-    },
-    {
-      title: 'AWS OpenSearch',
       // level: 2,
     },
     {
