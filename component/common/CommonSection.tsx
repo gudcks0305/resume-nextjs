@@ -5,7 +5,7 @@ import { Style } from './Style';
 
 export function CommonSection({ title, children }: PropsWithChildren<{ title: string }>) {
   return (
-    <div className="mt-2">
+    <div className="mt-2" style={{ pageBreakInside: 'avoid' }}>
       <EmptyRowCol>
         <Row className="pb-3">
           <Col>

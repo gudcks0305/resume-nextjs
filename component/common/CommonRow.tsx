@@ -13,7 +13,7 @@ export function CommonRows({
   const isNeedDescriptionPadding = !!(right.title || right.subTitle);
 
   return (
-    <div>
+    <div style={{ pageBreakInside: 'avoid' }}>
       {index > 0 ? <hr /> : ''}
       <Row>
         <Col sm={12} md={3} className="text-md-right">
