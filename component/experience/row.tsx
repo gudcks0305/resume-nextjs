@@ -4,6 +4,7 @@ import { Badge, Col, Row } from 'reactstrap';
 import { Style } from '../common/Style';
 import Util from '../common/Util';
 import { IExperience } from './IExperience';
+import parse from "html-react-parser";
 
 export default function ExperienceRow({
   item,
@@ -21,7 +22,7 @@ export default function ExperienceRow({
           <i style={Style.gray}>{item.position}</i>
           <ul className="pt-3">
             {item.descriptions.map((description, descIndex) => (
-              <li key={descIndex.toString()}>{description}</li>
+              <li key={descIndex.toString()}>{parse(description)}</li>
             ))}
             {createSkillKeywords(item.skillKeywords)}
           </ul>
