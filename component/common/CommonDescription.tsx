@@ -1,4 +1,5 @@
 import { PropsWithChildren, CSSProperties } from 'react';
+import parse from 'html-react-parser';
 import { IRow } from './IRow';
 import { HrefTargetBlank } from '.';
 
@@ -107,7 +108,7 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
         </li>
       );
     }
-    return <li style={getFontWeight(weight)}>{content}</li>;
+    return <li style={getFontWeight(weight)}>{parse(content)}</li>;
   })();
 
   return component;
