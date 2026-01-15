@@ -1,1 +1,73 @@
-import { IExperience } from '../component/experience/IExperience';const experience: IExperience.Payload = {  disable: false,  disableTotalPeriod: false,  list: [    {      title: '그릿스탠다드',      position: 'BACKEND DEVELOPER',      startedAt: '2023-04',      endedAt: '2025-02',      descriptions: [        '<b>물류 플랫폼 서비스의 웹 서비스 구축</b>',        '<b>메일 시스템 구축</b>',        '- 기존 구축 된 메일 시스템의 <b>동시성 문제 해결</b> -> <b>ES VS RDBMS 간 상태 동기화 문제 해결</b>',        '<b>사내 물류 담당자를 위한 ERP 시스템 개발</b>',        '- <b>FastAPI의 비동기 이벤트 루프 Blocking IO 문제를 해결</b>하여 <b>STOP THE WORLD 현상 해결</b>',        '<b>인프라 운영</b>',        '- <b>POD 리소스 최적화</b>로 node의 리소스 낭비 방지 : 노드당 낭비 CPU 제거 <b>Idle CPU 0.1 Core 미만 유지</b>',        '- <b>Java JVM 옵션 최적화</b>로 Memory 할당 최적화 및 누수 방지 : <b>파드당 500MB의 메모리 추가 확보</b>',        '- <b>HostPort</b>로 올라 가져있는 Deployment 설정 변경으로 node 당 POD 하나 올라갈 수 있는 설정 문제 해결',      ],      skillKeywords: [        'Java',        'Spring',        'JPA',        'QueryDSL',        'Kubernetes',        'MySQL',        'AWS',        'Python',        'FastAPI',      ],    },  ],};export default experience;
+import { IExperience } from '../component/experience/IExperience';
+
+const experience: IExperience.Payload = {
+  disable: false,
+  disableTotalPeriod: false,
+  list: [
+    {
+      title: '마이다스인',
+      position: 'BACKEND DEVELOPER',
+      startedAt: '2025-05',
+      descriptions: [
+        '<b>AI 역량검사 센터(ACCA) 백엔드 개발</b> - HR 솔루션 국내 1위 기업의 AI 기반 채용 플랫폼',
+        '<b>AI/LLM 기반 HR-Tech 평가 시스템 개발</b>',
+        '- Spring AI + Langchain4j 기반 <b>면접 질문 자동 생성 시스템</b> 구축 → 설계 시간 <b>70% 단축</b>',
+        '- <b>Function Calling(Tool Use)</b> 기반 평가 기준 정합성 실시간 검증',
+        '- <b>Multi-Agent(SupervisorAgent 패턴)</b> 도입으로 역량검사 해석 에이전트 오케스트레이션 구현',
+        '- JSON Schema 기반 Structured Output으로 LLM 응답 안정성 확보',
+        '<b>NCS 직업기초능력 역량검사 시스템 개발</b>',
+        '- NCS 10대 직업기초능력 영역별 점수/등수 산출 로직 개발',
+        '- 웹 결과표 ↔ 엑셀 다운로드 간 <b>데이터 일관성 100% 보장</b> 체계 구현',
+        '- Apache POI 기반 엑셀 결과표 생성 및 출력용 블라인드 옵션으로 <b>공정채용 가이드라인 준수</b>',
+        '<b>통합그리드 엑셀 다운로드 최적화</b>',
+        '- N+1 쿼리 문제 해결로 <b>93% 쿼리 감소</b> (30번 → 2번, Fetch Join + @EntityGraph)',
+        '- SXSSFWorkbook 스트리밍 방식으로 대용량 데이터 메모리 이슈 해결',
+        '<b>AI 기반 채용 플래너 및 큐레이터 시스템</b>',
+        '- 직무기술서(JD) 분석 기반 역량 면접 질문 자동 생성 파이프라인 구축',
+        '- 다공고/다전형 영상 면접 설정의 직군/직무 기반 동적 처리',
+      ],
+      skillKeywords: [
+        'Java 21',
+        'Spring Boot 3.3',
+        'Spring AI',
+        'Langchain4j',
+        'OpenAI GPT-4',
+        'JPA/Hibernate',
+        'QueryDSL',
+        'MariaDB',
+        'Redis',
+        'Kafka',
+      ],
+    },
+    {
+      title: '그릿스탠다드',
+      position: 'BACKEND DEVELOPER',
+      startedAt: '2023-04',
+      endedAt: '2025-02',
+      descriptions: [
+        '<b>물류 플랫폼 서비스의 웹 서비스 구축</b>',
+        '<b>메일 시스템 구축</b>',
+        '- 기존 구축 된 메일 시스템의 <b>동시성 문제 해결</b> -> <b>ES VS RDBMS 간 상태 동기화 문제 해결</b>',
+        '<b>사내 물류 담당자를 위한 ERP 시스템 개발</b>',
+        '- <b>FastAPI의 비동기 이벤트 루프 Blocking IO 문제를 해결</b>하여 <b>STOP THE WORLD 현상 해결</b>',
+        '<b>인프라 운영</b>',
+        '- <b>POD 리소스 최적화</b>로 node의 리소스 낭비 방지 : 노드당 낭비 CPU 제거 <b>Idle CPU 0.1 Core 미만 유지</b>',
+        '- <b>Java JVM 옵션 최적화</b>로 Memory 할당 최적화 및 누수 방지 : <b>파드당 500MB의 메모리 추가 확보</b>',
+        '- <b>HostPort</b>로 올라 가져있는 Deployment 설정 변경으로 node 당 POD 하나 올라갈 수 있는 설정 문제 해결',
+      ],
+      skillKeywords: [
+        'Java',
+        'Spring',
+        'JPA',
+        'QueryDSL',
+        'Kubernetes',
+        'MySQL',
+        'AWS',
+        'Python',
+        'FastAPI',
+      ],
+    },
+  ],
+};
+
+export default experience;

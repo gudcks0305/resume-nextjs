@@ -1,4 +1,5 @@
 import { IProject } from '../component/project/IProject';
+import { acca } from './project_list/acca';
 import { yataProject } from './project_list/yataProject';
 import { gdscBlog } from './project_list/gdscblog';
 import { ociKubernetesProject } from './project_list/ociKubernetes';
@@ -8,6 +9,6 @@ import { mailbox } from './project_list/mailbox';
 
 const project: IProject.Payload = {
   disable: false,
-  list: [pageone, aimsWeb, ociKubernetesProject, mailbox, yataProject, gdscBlog],
+  list: [acca, pageone, aimsWeb, ociKubernetesProject, mailbox, yataProject, gdscBlog],
 };
 export default project;
