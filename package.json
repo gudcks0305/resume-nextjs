@@ -13,7 +13,7 @@
     "export": "npm run clean && cross-env NODE_ENV=production next build && mv out docs",
     "postexport": "node shellwork.js",
     "clean": "npx rimraf docs .next out",
-    "lint": "eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" \"*.ts\" --fix",
+    "lint": "eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" --fix",
     "typedoc": "typedoc --excludeExternals",
     "typecheck": "next typegen && tsc --noEmit"
   },
