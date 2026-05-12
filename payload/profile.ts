@@ -7,7 +7,7 @@ const profile: IProfile.Payload = {
   disable: false,
 
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
-  image,
+  image: image.src,
   name: {
     title: '유형찬',
     small: '',

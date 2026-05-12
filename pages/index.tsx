@@ -2,7 +2,7 @@
 import { Container } from 'reactstrap';
 
 import Head from 'next/head';
-import { NextSeo } from 'next-seo';
+import { generateNextSeo } from 'next-seo/pages';
 import { Education } from '../component/education';
 import { Etc } from '../component/etc';
 import { Project } from '../component/project';
@@ -20,10 +20,10 @@ import { Article } from '../component/article';
 function Yosume() {
   return (
     <>
-      <NextSeo {...Payload._global.seo} />
       <Head>
         <title>{Payload._global.headTitle}</title>
         <link rel="shortcut icon" href={Payload._global.favicon} />
+        {generateNextSeo(Payload._global.seo)}
       </Head>
       <Container style={Style.global}>
         <Profile.Component payload={Payload.profile} />

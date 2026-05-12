@@ -44,7 +44,7 @@ npm run dev
   - 이력서 렌더링에 필요한 데이터가 포함된다.
   - 하단의 Payload Detail 참고
 - docs/
-  - `npm run export (next export)` 를 실행하면 Static HTML 이 렌더링되어 `docs` 디렉토리 하단에 생성된다.
+  - `npm run export` 를 실행하면 Next.js static export 결과가 `docs` 디렉토리 하단에 생성된다.
   - Github Pages 의 master branch 의 `docs/` 디렉토리를 지정하여 Github Pages 호스팅을 할 수 있는데, 이를 위해 export 디렉토리 이름을 docs 로 명명했다.
   - `docs/typedoc/` 에는 TypeDoc HTML 이 포함되지만 `npm run export` 로는 생성하지 않는다. `npm run typedoc` 으로 TypeDoc 을 생성할 수 있다.
 

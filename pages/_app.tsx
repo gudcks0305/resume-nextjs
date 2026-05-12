@@ -1,16 +1,8 @@
-import 'jquery/dist/jquery.slim';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { NextComponentType } from 'next';
+import { AppProps } from 'next/app';
 
-export default function YosumeApp({
-  Component,
-  pageProps,
-}: {
-  Component: NextComponentType;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  pageProps: any;
-}) {
+export default function YosumeApp({ Component, pageProps }: AppProps) {
   // eslint-disable-next-line react/jsx-props-no-spreading
   return <Component {...pageProps} />;
 }

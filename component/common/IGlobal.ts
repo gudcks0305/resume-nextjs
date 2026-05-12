@@ -1,4 +1,4 @@
-import { NextSeoProps } from 'next-seo';
+import { NextSeoProps } from 'next-seo/pages';
 
 export declare namespace IGlobal {
   export interface Payload {

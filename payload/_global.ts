@@ -6,7 +6,7 @@ const title = '유형찬 이력서 ';
 const description = '백엔드 개발자 유형찬의 이력서입니다.';
 
 export const _global: IGlobal.Payload = {
-  favicon,
+  favicon: favicon.src,
   headTitle: title,
   seo: {
     title,
@@ -16,7 +16,7 @@ export const _global: IGlobal.Payload = {
       description,
       images: [
         {
-          url: previewImage,
+          url: previewImage.src,
           width: 600,
           height: 800,
           alt: 'OpenGraph Image Sample.png',

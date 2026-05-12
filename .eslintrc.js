@@ -33,6 +33,12 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 0,
     'import/prefer-default-export': 0,
     'import/extensions': 0,
+    'import/no-unresolved': [
+      2,
+      {
+        ignore: ['^next-seo/pages$'],
+      },
+    ],
     'react/react-in-jsx-scope': 0,
     quotes: [
       2,

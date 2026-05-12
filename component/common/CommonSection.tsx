@@ -14,7 +14,7 @@ export function CommonSection({ title, children }: PropsWithChildren<{ title: st
             </h4>
           </Col>
         </Row>
-        <div className="fs-1">{children}</div>
+        <div>{children}</div>
       </EmptyRowCol>
     </div>
   );
