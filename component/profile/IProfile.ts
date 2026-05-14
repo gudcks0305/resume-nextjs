@@ -59,7 +59,7 @@ export declare namespace IProfile {
     /**
      * ### 내용을 뱃지로 표시할 것인가?
      *
-     * @description Bootstrap 4 의 Badge 로 표시하고 싶을 경우 true
+     * @description Bootstrap Badge 로 표시하고 싶을 경우 true
      */
     badge?: true;
   }

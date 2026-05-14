@@ -25,7 +25,7 @@ function Yosume() {
         <link rel="shortcut icon" href={Payload._global.favicon} />
         {generateNextSeo(Payload._global.seo)}
       </Head>
-      <Container style={Style.global}>
+      <Container className="resume-container" style={Style.global}>
         <Profile.Component payload={Payload.profile} />
         <Introduce.Component payload={Payload.introduce} />
         <Experience.Component payload={Payload.experience} />

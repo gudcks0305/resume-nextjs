@@ -9,11 +9,13 @@ export default function SkillRow({
   index,
 }: PropsWithChildren<{ skill: ISkill.Skill; index: number }>) {
   return (
-    <div>
+    <div className="resume-row">
       {index > 0 ? <hr /> : ''}
       <Row>
-        <Col sm={12} md={3} className="text-md-end">
-          <h4 style={Style.gray}>{skill.category}</h4>
+        <Col sm={12} md={3} className="text-md-end resume-meta-column">
+          <h4 className="resume-meta-title" style={Style.gray}>
+            {skill.category}
+          </h4>
         </Col>
         <Col sm={12} md={9}>
           {/* {skill.items.map((item) => JSON.stringify(item, null, 2))} */}
@@ -45,10 +47,13 @@ function createCalculatedSkillItems(items: ISkill.Item[]) {
   log('list', list);
 
   return (
-    <Row className="mt-2 mt-md-0">
-      {list.map((skills, index) => {
+    <Row className="mt-2 mt-md-0 resume-skill-row">
+      {list.filter(Boolean).map((skills, index) => {
+        if (!skills.length) {
+          return null;
+        }
         return (
-          <Col md={4} xs={12} key={index.toString()}>
+          <Col md={4} xs={6} key={index.toString()}>
             <ul>
               {skills.map((skill, skillIndex) => {
                 return (
@@ -81,14 +86,14 @@ function createBadge(level?: ISkill.Item['level']) {
       }
       case 1:
       default: {
-        return 'light';
+        return 'secondary';
       }
     }
   })();
 
   return (
     <span>
-      <Badge pill color={color}>
+      <Badge pill color={color} className="resume-skill-badge">
         {level}
       </Badge>{' '}
     </span>

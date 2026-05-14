@@ -22,10 +22,10 @@ export const Profile = {
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   const { image, contact, name, notice } = payload;
   return (
-    <div className="mt-5">
+    <div className="resume-profile">
       <Row>
         <Col md={3} sm={12}>
-          <ProfileImage src={image} />
+          <ProfileImage src={image} alt={`${name.title} 프로필 사진`} />
         </Col>
         <Col md={9} sm={12}>
           {createNameArea(name)}
@@ -41,7 +41,7 @@ function createNameArea(name: Payload['name']) {
   return (
     <Row>
       <Col className="text-center text-md-start">
-        <h1 style={Style.blue}>
+        <h1 className="resume-profile-name" style={Style.blue}>
           {name.title} <small>{name.small || ''}</small>
         </h1>
       </Col>
@@ -64,7 +64,7 @@ function createProfileContactMap(contacts: Payload['contact']) {
 function createNoticeArea(notice: Payload['notice']) {
   return (
     <EmptyRowCol>
-      <Alert color="secondary" role="alert" className="mt-3">
+      <Alert color="secondary" role="alert" className="mt-3 resume-profile-notice">
         {notice.icon ? <FontAwesomeIcon className="me-2" icon={notice.icon} /> : ''}
         {notice.title}
       </Alert>

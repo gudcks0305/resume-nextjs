@@ -22,11 +22,11 @@ export const Style: Record<TStyleKey, CSSProperties> = {
 
   global: {
     fontFamily: "'Noto Sans KR', sans-serif",
-    fontWeight: 300,
+    fontWeight: 400,
     wordWrap: 'break-word',
     wordBreak: 'keep-all',
-    lineHeight: 1.8,
-    fontSize: '0.8em',
+    lineHeight: 1.72,
+    fontSize: '0.86rem',
   },
 
   sign: {
@@ -35,7 +35,7 @@ export const Style: Record<TStyleKey, CSSProperties> = {
   },
 
   profileImg: {
-    maxHeight: '320px',
+    maxHeight: '280px',
   },
 
   footerCover: {

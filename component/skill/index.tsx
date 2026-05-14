@@ -21,13 +21,13 @@ export const Skill = {
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
-    <div className="mt-5" style={{ pageBreakInside: 'avoid' }}>
+    <div className="resume-section">
       <EmptyRowCol>
         <Row className="pb-3">
           <Col>
-            <h4>
+            <h4 className="resume-section-title">
               <span style={Style.blue}>SKILL</span>
-              {createTooltip(payload.tooltip)}
+              <SkillTooltip content={payload.tooltip || ''} />
             </h4>
           </Col>
         </Row>
@@ -39,9 +39,9 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   );
 }
 
-function createTooltip(content?: string) {
+function SkillTooltip({ content }: { content: string }) {
   if (!content) {
-    return '';
+    return null;
   }
 
   const [tooltipOpen, setTooltipOpen] = useState(false);
@@ -49,8 +49,14 @@ function createTooltip(content?: string) {
 
   return (
     <small>
-      {' '}
-      <FontAwesomeIcon icon={faQuestionCircle} id="skill-tooltip" />
+      <button
+        id="skill-tooltip"
+        type="button"
+        className="resume-tooltip-button"
+        aria-label="스킬 레벨 설명"
+      >
+        <FontAwesomeIcon icon={faQuestionCircle} />
+      </button>
       <Tooltip
         style={{ whiteSpace: 'pre-wrap' }}
         placement="right"

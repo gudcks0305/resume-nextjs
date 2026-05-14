@@ -11,15 +11,17 @@ export default function ExperienceRow({
   index,
 }: PropsWithChildren<{ item: IExperience.Item; index: number }>) {
   return (
-    <div>
+    <div className="resume-row">
       {index > 0 ? <hr /> : ''}
       <Row>
-        <Col sm={12} md={3} className="text-md-end">
+        <Col sm={12} md={3} className="text-md-end resume-meta-column">
           {createWorkingPeriod(item.startedAt, item.endedAt)}
         </Col>
         <Col sm={12} md={9}>
-          <h4>{item.title}</h4>
-          <i style={Style.gray}>{item.position}</i>
+          <h4 className="resume-item-title">{item.title}</h4>
+          <i className="resume-subtitle" style={Style.gray}>
+            {item.position}
+          </i>
           <ul className="pt-3">
             {item.descriptions.map((description, descIndex) => (
               <li key={descIndex.toString()}>{parse(description)}</li>
@@ -45,7 +47,7 @@ function createSkillKeywords(skillKeywords?: string[]) {
             style={Style.skillKeywordBadge}
             key={index.toString()}
             color="secondary"
-            className="me-1"
+            className="me-1 resume-experience-badge"
           >
             {keyword}
           </Badge>
@@ -79,20 +81,22 @@ function createWorkingPeriod(startedAtString: string, endedAtString?: string) {
   })();
 
   return (
-    <Row>
-      <Col md={12} xs={isWorking ? 7 : 9}>
-        <h4 style={Style.gray}>{periodTitle}</h4>
-      </Col>
-      <Col md={12} xs={isWorking ? 5 : 3} className="text-md-end text-center">
+    <div className="resume-period">
+      <h4 className="resume-meta-title" style={Style.gray}>
+        {periodTitle}
+      </h4>
+      <div className="resume-period-badges">
         {isWorking ? (
-          <Badge color="primary" className="me-1">
+          <Badge color="dark" className="resume-experience-badge">
             재직 중
           </Badge>
         ) : (
           ''
         )}
-        <Badge color="info">{Util.getFormattingDuration(startedAt, endedAt)}</Badge>
-      </Col>
-    </Row>
+        <Badge color="secondary" className="resume-experience-badge">
+          {Util.getFormattingDuration(startedAt, endedAt)}
+        </Badge>
+      </div>
+    </div>
   );
 }

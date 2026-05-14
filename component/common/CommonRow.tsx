@@ -13,20 +13,28 @@ export function CommonRows({
   const isNeedDescriptionPadding = !!(right.title || right.subTitle);
 
   return (
-    <div style={{ pageBreakInside: 'avoid' }}>
+    <div className="resume-row">
       {index > 0 ? <hr /> : ''}
       <Row>
-        <Col sm={12} md={3} className="text-md-end">
+        <Col sm={12} md={3} className="text-md-end resume-meta-column">
           <Row>
             <Col md={12}>
-              <h4 style={Style.gray}>{left.title}</h4>
+              <h4 className="resume-meta-title" style={Style.gray}>
+                {left.title}
+              </h4>
             </Col>
             {left.subTitle ? <Col md={12}>{left.subTitle}</Col> : ''}
           </Row>
         </Col>
         <Col sm={12} md={9}>
-          {right.title ? <h5>{right.title}</h5> : ''}
-          {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
+          {right.title ? <h5 className="resume-item-title">{right.title}</h5> : ''}
+          {right.subTitle ? (
+            <i className="resume-subtitle" style={Style.gray}>
+              {right.subTitle}
+            </i>
+          ) : (
+            ''
+          )}
           {right.descriptions ? (
             <CommonDescription
               descriptions={right.descriptions}

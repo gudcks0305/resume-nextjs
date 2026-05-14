@@ -5,11 +5,11 @@ import { Style } from './Style';
 
 export function CommonSection({ title, children }: PropsWithChildren<{ title: string }>) {
   return (
-    <div className="mt-2" style={{ pageBreakInside: 'avoid' }}>
+    <div className="resume-section">
       <EmptyRowCol>
         <Row className="pb-3">
           <Col>
-            <h4 style={Style.blue}>
+            <h4 className="resume-section-title" style={Style.blue}>
               <span>{title}</span>
             </h4>
           </Col>

@@ -1,0 +1,246 @@
+.resume-container {
+  color: #2f3437;
+  font-size: 0.86rem;
+  line-height: 1.72;
+}
+
+.resume-container h1,
+.resume-container h2,
+.resume-container h3,
+.resume-container h4,
+.resume-container h5 {
+  letter-spacing: 0;
+}
+
+.resume-container h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.resume-container h2,
+.resume-section-title {
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.resume-container h4 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.resume-container h5,
+.resume-item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.resume-section {
+  margin-top: 2.25rem;
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+.resume-row {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.resume-container hr {
+  margin: 0.85rem 0;
+  opacity: 0.16;
+}
+
+.resume-meta-column {
+  margin-bottom: 0.15rem;
+}
+
+.resume-meta-title {
+  margin-bottom: 0.25rem;
+  color: #70757a;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.resume-subtitle {
+  color: #70757a;
+}
+
+.resume-profile {
+  margin-top: 2rem;
+}
+
+.resume-profile-image {
+  max-height: 280px;
+}
+
+.resume-profile-notice.alert {
+  padding: 0.55rem 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.88rem;
+}
+
+.resume-contact-badge.badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.resume-updated {
+  margin-top: 0.75rem;
+  color: #70757a;
+  font-size: 0.78rem;
+}
+
+.resume-sign {
+  margin-top: 0.25rem;
+}
+
+.resume-skill-row ul {
+  padding-left: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.resume-skill-badge.badge,
+.resume-experience-badge.badge {
+  font-weight: 600;
+}
+
+.resume-tooltip-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-left: 0.35rem;
+  color: #70757a;
+  background: transparent;
+  border: 0;
+}
+
+.resume-tooltip-button:focus-visible {
+  outline: 2px solid #8664ff;
+  outline-offset: 2px;
+}
+
+.resume-period {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-end;
+}
+
+.resume-period-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+@media (max-width: 767.98px) {
+  .resume-container {
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .resume-container h1 {
+    font-size: 1.9rem;
+  }
+
+  .resume-container h2,
+  .resume-section-title {
+    font-size: 1.35rem;
+  }
+
+  .resume-container h4,
+  .resume-meta-title {
+    font-size: 0.96rem;
+  }
+
+  .resume-profile {
+    margin-top: 1.35rem;
+  }
+
+  .resume-profile-image {
+    max-height: 220px;
+  }
+
+  .resume-section {
+    margin-top: 1.65rem;
+  }
+
+  .resume-meta-column,
+  .resume-period {
+    text-align: left;
+  }
+
+  .resume-period,
+  .resume-period-badges {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .resume-meta-title {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  @page {
+    margin: 12mm;
+  }
+
+  .resume-container {
+    max-width: none;
+    color: #000;
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  .resume-container h1 {
+    font-size: 20pt;
+  }
+
+  .resume-container h2,
+  .resume-section-title {
+    font-size: 15pt;
+  }
+
+  .resume-container h4,
+  .resume-container h5,
+  .resume-meta-title,
+  .resume-item-title {
+    font-size: 11pt;
+  }
+
+  .resume-profile {
+    margin-top: 0;
+  }
+
+  .resume-profile-image {
+    max-height: 155px;
+  }
+
+  .resume-section {
+    margin-top: 0.85rem;
+  }
+
+  .resume-profile-notice,
+  .resume-updated,
+  .resume-sign,
+  .resume-tooltip-button {
+    display: none !important;
+  }
+
+  .resume-container a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .resume-container .badge {
+    color: #000 !important;
+    background: transparent !important;
+    border: 1px solid #999;
+  }
+}

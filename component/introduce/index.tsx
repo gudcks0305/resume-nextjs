@@ -29,10 +29,12 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
   // @ts-ignore
   return (
-    <div className="mt-5">
+    <div className="resume-section">
       <Row>
         <Col sm={12} md={3}>
-          <h2 style={Style.blue}>INTRODUCE</h2>
+          <h2 className="resume-section-title" style={Style.blue}>
+            INTRODUCE
+          </h2>
         </Col>
         <Col sm={12} md={9}>
           {payload.contents.map((content, index) => (
@@ -49,7 +51,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
               <br />
             </span>
           ))}
-          <p className="text-end">
+          <p className="text-end resume-updated">
             <small>Latest Updated</small>{' '}
             <Badge color="secondary">
               {`${latestUpdated.toFormat(
@@ -57,7 +59,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
               )} (D+${latestUpdatedByNow})`}
             </Badge>
           </p>
-          <p className="text-end" style={Style.sign}>
+          <p className="text-end resume-sign" style={Style.sign}>
             {payload.sign}
           </p>
         </Col>
