@@ -7,7 +7,7 @@ export const pageone: IProject.Item = {
   descriptions: [
     {
       content:
-        '기술 스택: Java, Spring Boot, JPA/Hibernate, QueryDSL, AWS Lambda, MySQL, AWS S3, EKS',
+        '기술 스택: Java, Spring Boot, JPA/Hibernate, Querydsl, AWS Lambda, MySQL, AWS S3, EKS',
       weight: 'BOLD',
       descriptions: [
         {

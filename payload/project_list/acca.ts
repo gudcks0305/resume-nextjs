@@ -7,7 +7,7 @@ export const acca: IProject.Item = {
   descriptions: [
     {
       content:
-        '기술 스택: Java 21, Spring Boot 3.3, Spring AI 1.0, Langchain4j, OpenAI GPT-4, JPA/Hibernate, QueryDSL, MariaDB, Redis, Kafka',
+        '기술 스택: Java 21, Spring Boot 3.3, Spring AI 1.0, Langchain4j, OpenAI GPT-5, JPA/Hibernate, Querydsl, MariaDB, Redis, Kafka',
       weight: 'BOLD',
       descriptions: [
         {
@@ -16,15 +16,15 @@ export const acca: IProject.Item = {
           descriptions: [
             {
               content:
-                'Spring AI ChatClient 기반 대화형 AI 생성기로 <b>면접 질문 설계 시간 70% 단축</b>.',
+                'GPT-5 기반 Spring AI ChatClient와 Tool 연동으로 <b>면접 질문 설계 시간 70% 단축</b>.',
             },
             {
               content:
-                'N+1 쿼리를 Fetch Join, @EntityGraph, Bulk 조회 조합으로 해결하여 <b>쿼리 93% 감소</b>.',
+                'Querydsl 기반 조회 처리, Fetch Join, where in 일괄 조회, batch size 설정으로 <b>쿼리 93% 감소</b>.',
             },
             {
               content:
-                'JSON Schema 기반 Structured Output과 Function Calling 검증으로 <b>LLM 응답 안정성</b> 확보.',
+                'Spring AI Tool 호출과 JSON Schema 기반 Structured Output으로 <b>LLM 응답 안정성</b> 확보.',
             },
           ],
         },
@@ -33,7 +33,8 @@ export const acca: IProject.Item = {
           weight: 'MEDIUM',
           descriptions: [
             {
-              content: '직군/난이도별 프롬프트 템플릿 12종과 평가 기준 검증 로직을 설계 및 구현.',
+              content:
+                '직군/난이도별 프롬프트 템플릿 12종과 GPT-5 기반 평가 기준 생성 및 검증 로직을 설계.',
             },
             {
               content:
@@ -41,7 +42,7 @@ export const acca: IProject.Item = {
             },
             {
               content:
-                'NCS 직업기초능력 점수 산출, 블라인드 옵션, Apache POI 기반 엑셀 결과표 생성 기능 개발.',
+                'Code Interpreter container 활용 흐름과 NCS 점수 산출, 블라인드 옵션, Apache POI 기반 엑셀 결과표 생성 기능 개발.',
             },
           ],
         },

@@ -6,10 +6,18 @@ const introduce: IIntroduce.Payload = {
   contents: [
     {
       content:
-        'JAVA & Spring 개발자로 내부 포워딩 자동 물류 시스템 개발, Python & FastAPI 물류 ERP 시스템 개발 및 운영 경험이 있습니다.',
+        'JAVA & Spring 개발자로 마이다스인 AI 역량검사 센터(ACCA) 백엔드 개발과 물류 도메인 시스템 개발 및 운영 경험이 있습니다.',
     },
     {
-      content: 'EKS, ArgoCD 기반의  CI/CD 파이프 라인 구축 경험이 있습니다.',
+      content:
+        '마이다스인에서는 GPT-5, Spring AI, Tool 호출, Structured Output 기반으로 평가 자동화와 면접 질문 생성 기능을 개발하고 있습니다.',
+    },
+    {
+      content:
+        'Querydsl, Fetch Join, where in 일괄 조회, batch size 설정을 활용해 대용량 결과 조회와 엑셀 다운로드 성능을 개선한 경험이 있습니다.',
+    },
+    {
+      content: 'EKS, ArgoCD 기반의 CI/CD 파이프라인 구축 경험이 있습니다.',
     },
     {
       content:
