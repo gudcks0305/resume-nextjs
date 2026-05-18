@@ -1,5 +1,5 @@
 import { IIntroduce } from '../component/introduce/IIntroduce';
-import { lastestUpdatedAt } from '../package.json';
+import { latestUpdatedAt } from '../package.json';
 
 const introduce: IIntroduce.Payload = {
   disable: false,
@@ -48,7 +48,7 @@ const introduce: IIntroduce.Payload = {
   sign: 'Yoo Hyeong Chan',
   // sign: packageJson.author.name,
   // latestUpdated: '2023-02-07',
-  latestUpdated: lastestUpdatedAt,
+  latestUpdated: latestUpdatedAt,
 };
 
 export default introduce;
