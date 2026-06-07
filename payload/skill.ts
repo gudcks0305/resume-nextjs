@@ -119,17 +119,17 @@ const etc: ISkill.Skill = {
   ],
 };
 
-const Studying: ISkill.Skill = {
-  category: 'Studying',
+const learning: ISkill.Skill = {
+  category: 'Learning',
   items: [
     {
-      title: 'Kubernetes',
+      title: 'Go',
     },
     {
-      title: 'AWS',
+      title: 'ML Infrastructure',
     },
     {
-      title: 'Go language',
+      title: 'Data Streaming',
     },
   ],
 };
@@ -178,7 +178,7 @@ const Infrastructure: ISkill.Skill = {
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, Infrastructure, database, etc, Studying],
+  skills: [backend, Infrastructure, database, learning, etc],
   // tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 

@@ -20,7 +20,6 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2017",
-    "outDir": "docs",
     "incremental": true
   },
   "exclude": [
