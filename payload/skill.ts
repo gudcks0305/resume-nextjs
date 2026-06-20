@@ -1,185 +1,52 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const backend: ISkill.Skill = {
-  category: 'Back-end',
+const coreBackend: ISkill.Skill = {
+  category: 'Core Backend',
   items: [
-    {
-      title: 'Java',
-      // level: 3,
-    },
-    {
-      title: 'Gradle',
-      // level: 3,
-    },
-    {
-      title: 'Spring Boot',
-      // level: 3,
-    },
-    {
-      title: 'Spring MVC',
-      // level: 3,
-    },
-    {
-      title: 'Spring Security',
-      // level: 2,
-    },
-    {
-      title: 'Spring Cloud',
-      // level: 2,
-    },
-    {
-      title: 'Spring Data JPA',
-      // level: 2,
-    },
-    {
-      title: 'Querydsl',
-      // level: 2,
-    },
-    {
-      title: 'Nginx',
-      // level: 2,
-    },
-    {
-      title: 'Python FastAPI',
-      // level: 2,
-    },
-    // {
-    //   title: 'Querydsl',
-    //   // level: 1,
-    // },
-    // {
-    //   title: 'Nginx',
-    //   // level: 1,
-    // },
+    { title: 'Java 21' },
+    { title: 'Spring Boot' },
+    { title: 'Spring Data JPA' },
+    { title: 'Querydsl' },
+    { title: 'Batch/Excel Processing' },
   ],
 };
 
-const database: ISkill.Skill = {
-  category: 'Database',
+const aiRuntime: ISkill.Skill = {
+  category: 'AI Runtime',
   items: [
-    {
-      title: 'MySQL',
-      // level: 3,
-    },
-    {
-      title: 'Redis',
-      // level: 2,
-    },
-    // {
-    //   title: 'Oracle',
-    //   level: 1,
-    // },
-    // {
-    //   title: 'MongoDB',
-    //   level: 1,
-    // },
+    { title: 'Spring AI' },
+    { title: 'Langchain4j' },
+    { title: 'OpenAI GPT' },
+    { title: 'STT/TTS' },
+    { title: 'Langfuse' },
   ],
 };
 
-// const frontend: ISkill.Skill = {
-//   category: 'Front-end',
-//   items: [
-//     {
-//       title: 'Next.js',
-//       level: 2,
-//     },
-//     {
-//       title: 'React.js',
-//       level: 2,
-//     },
-//     {
-//       title: 'javascript',
-//       level: 2,
-//     },
-//     {
-//       title: 'HTML/CSS',
-//       level: 2,
-//     },
-//   ],
-// };
-
-const etc: ISkill.Skill = {
-  category: 'Etc',
+const dataPerformance: ISkill.Skill = {
+  category: 'Data & Performance',
   items: [
-    {
-      title: 'Ubuntu',
-    },
-    {
-      title: 'Git',
-    },
-    {
-      title: 'IntelliJ',
-    },
-    {
-      title: 'Vim',
-    },
-    {
-      title: 'VS Code',
-    },
+    { title: 'MariaDB/MySQL' },
+    { title: 'MongoDB' },
+    { title: 'Redis' },
+    { title: 'Kafka' },
+    { title: 'Performance Testing' },
   ],
 };
 
-const learning: ISkill.Skill = {
-  category: 'Learning',
+const cloudOperations: ISkill.Skill = {
+  category: 'Cloud & Ops',
   items: [
-    {
-      title: 'Go',
-    },
-    {
-      title: 'ML Infrastructure',
-    },
-    {
-      title: 'Data Streaming',
-    },
-  ],
-};
-
-const Infrastructure: ISkill.Skill = {
-  category: 'Infrastructure',
-  items: [
-    {
-      title: 'Kubernetes',
-      // level: 2,
-    },
-    {
-      title: 'ArgoCD',
-      // level: 2,
-    },
-    {
-      title: 'AWS CloudWatch',
-      // level: 2,
-    },
-    {
-      title: 'AWS EC2',
-      // level: 2,
-    },
-    {
-      title: 'AWS VPC',
-      // level: 2,
-    },
-    {
-      title: 'AWS EKS',
-      // level: 2,
-    },
-    {
-      title: 'AWS S3',
-      // level: 2,
-    },
-    {
-      title: 'AWS Lambda',
-      // level: 2,
-    },
-    {
-      title: 'Oracle Cloud Kubernetes (OKE)',
-      // level: 1,
-    },
+    { title: 'Kubernetes' },
+    { title: 'EKS' },
+    { title: 'ArgoCD' },
+    { title: 'AWS Lambda' },
+    { title: 'CloudWatch' },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, Infrastructure, database, learning, etc],
-  // tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
+  skills: [coreBackend, aiRuntime, dataPerformance, cloudOperations],
 };
 
 export default skill;

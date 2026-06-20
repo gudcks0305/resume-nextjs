@@ -16,7 +16,7 @@ export const pageone: IProject.Item = {
           descriptions: [
             {
               content:
-                '수작업 중심의 세관 신고와 문서 처리 흐름 때문에 처리 속도와 데이터 일관성이 업무 병목이었습니다.',
+                '수작업 중심의 세관 신고와 문서 처리 흐름 때문에 고객 응대 속도와 데이터 일관성이 업무 병목이었습니다.',
             },
             {
               content:
@@ -30,15 +30,15 @@ export const pageone: IProject.Item = {
           descriptions: [
             {
               content:
-                '물류 도메인 테이블을 정규화하고 핵심 CRUD/API, 세관 연동 데이터 확보, 신고 자동화 흐름을 개발했습니다.',
+                '반복 입력과 누락 가능성을 줄이기 위해 물류 도메인 테이블을 정규화하고 핵심 CRUD/API, 세관 연동 데이터 확보, 신고 자동화 흐름을 개발했습니다.',
             },
             {
               content:
-                'LibreOffice Lambda Layer 기반 문서 PDF 변환과 S3 저장 흐름을 구현하고, AWS Lambda SnapStart로 Java Lambda cold start 병목을 줄였습니다.',
+                '문서 처리 지연을 줄이기 위해 LibreOffice Lambda Layer 기반 PDF 변환과 S3 저장 흐름을 구현하고, AWS Lambda SnapStart로 Java Lambda cold start 병목을 줄였습니다.',
             },
             {
               content:
-                'SQL Migration, Restdocs, Swagger 문서화를 정비해 데이터 이전과 팀 협업 비용을 줄였습니다.',
+                '팀 간 API 이해와 데이터 이전 리스크를 줄이기 위해 SQL Migration, Restdocs, Swagger 문서화를 정비했습니다.',
             },
           ],
         },
@@ -48,7 +48,7 @@ export const pageone: IProject.Item = {
           descriptions: [
             {
               content:
-                '세관 연동 데이터 확보와 신고 자동화 시스템 구축으로 <b>세관 처리 속도 2배 향상</b>에 기여했습니다.',
+                '세관 연동 데이터 확보와 신고 자동화 시스템 구축으로 고객 응대 병목이던 <b>세관 처리 속도 2배 향상</b>에 기여했습니다.',
             },
             {
               content:
@@ -56,7 +56,7 @@ export const pageone: IProject.Item = {
             },
             {
               content:
-                'AI 기반 PDF 분석 파이프라인으로 인보이스 데이터 추출, 저장, 신고서 생성을 자동화했습니다.',
+                'AI 기반 PDF 분석 파이프라인으로 인보이스 데이터 추출, 저장, 신고서 생성을 자동화해 반복 수작업을 줄였습니다.',
             },
           ],
         },

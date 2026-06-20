@@ -7,7 +7,6 @@ import { Education } from '../component/education';
 import { Etc } from '../component/etc';
 import { Project } from '../component/project';
 import { Experience } from '../component/experience';
-import { Footer } from '../component/footer';
 import { Introduce } from '../component/introduce';
 import { OpenSource } from '../component/openSource';
 import { Presentation } from '../component/presentation';
@@ -28,15 +27,14 @@ function Yosume() {
       <Container className="resume-container" style={Style.global}>
         <Profile.Component payload={Payload.profile} />
         <Introduce.Component payload={Payload.introduce} />
+        <Skill.Component payload={Payload.skill} />
         <Experience.Component payload={Payload.experience} />
+        <Project.Component payload={Payload.project} />
         <Education.Component payload={Payload.education} />
         <Etc.Component payload={Payload.etc} />
-        <Skill.Component payload={Payload.skill} />
         <OpenSource.Component payload={Payload.openSource} />
         <Presentation.Component payload={Payload.presentation} />
         <Article.Component payload={Payload.article} />
-        <Project.Component payload={Payload.project} />
-        <Footer.Component payload={Payload.footer} />
       </Container>
     </>
   );

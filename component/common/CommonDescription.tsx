@@ -11,7 +11,7 @@ export function CommonDescription({
   return (
     <>
       {descriptions ? (
-        <ul className={option?.padding ? 'pt-2' : ''}>
+        <ul className={`resume-description-list${option?.padding ? ' pt-2' : ''}`}>
           {descriptions.map((description, descIndex) => {
             return (
               <Fragment key={descIndex.toString()}>
@@ -37,7 +37,7 @@ function DescriptionRecursion({
   descriptions,
 }: PropsWithChildren<{ descriptions: IRow.Description[] }>) {
   return (
-    <ul>
+    <ul className="resume-description-list resume-description-list-nested">
       {descriptions.map((description, index) => {
         return (
           <Fragment key={index.toString()}>
@@ -56,25 +56,46 @@ function DescriptionRecursion({
 
 function Description({ description }: PropsWithChildren<{ description: IRow.Description }>) {
   const { content, href, postImage, postHref, weight } = description;
+  const className = getDescriptionClassName(description);
+  const chipGroup = getChipGroup(content);
 
   const component = (() => {
+    if (chipGroup.items.length) {
+      return (
+        <li className="resume-description-tech-stack">
+          {chipGroup.label ? (
+            <span className="resume-chip-group-label">{chipGroup.label}</span>
+          ) : (
+            ''
+          )}
+          <div className="resume-tech-stack-chips">
+            {chipGroup.items.map((item, index) => (
+              <span key={index.toString()} className="resume-tech-stack-chip">
+                {parse(item)}
+              </span>
+            ))}
+          </div>
+        </li>
+      );
+    }
+
     if (href && postImage) {
       return (
-        <li style={getFontWeight(weight)}>
+        <li className={className} style={getFontWeight(weight)}>
           <HrefTargetBlank url={href} text={content} /> <img src={postImage} alt={content} />
         </li>
       );
     }
     if (href) {
       return (
-        <li style={getFontWeight(weight)}>
+        <li className={className} style={getFontWeight(weight)}>
           <HrefTargetBlank url={href} text={content} />
         </li>
       );
     }
     if (postHref && postImage) {
       return (
-        <li style={getFontWeight(weight)}>
+        <li className={className} style={getFontWeight(weight)}>
           {content} <HrefTargetBlank url={postHref} text={postHref} />{' '}
           <img src={postImage} alt={content} style={{ width: '50%' }} />
         </li>
@@ -82,14 +103,14 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
     }
     if (postHref) {
       return (
-        <li style={getFontWeight(weight)}>
+        <li className={className} style={getFontWeight(weight)}>
           {content} <HrefTargetBlank url={postHref} text={postHref} />
         </li>
       );
     }
     if (postImage) {
       return (
-        <li style={getFontWeight(weight)}>
+        <li className={className} style={getFontWeight(weight)}>
           {content}
           <div>
             {' '}
@@ -102,10 +123,46 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
         </li>
       );
     }
-    return <li style={getFontWeight(weight)}>{parse(content)}</li>;
+    return (
+      <li className={className} style={getFontWeight(weight)}>
+        {parse(content)}
+      </li>
+    );
   })();
 
   return component;
+}
+
+function getChipGroup(content: string) {
+  const chipPrefixes = ['기술 스택:', '주요 과목:'];
+  const prefix = chipPrefixes.find((item) => content.trim().startsWith(item));
+
+  if (!prefix) {
+    return { items: [] };
+  }
+
+  return {
+    label: prefix.replace(':', ''),
+    items: content
+      .replace(prefix, '')
+      .split(',')
+      .map((item) => item.trim())
+      .filter(Boolean),
+  };
+}
+
+function getDescriptionClassName(description: IRow.Description) {
+  const classes: string[] = [];
+
+  if (description.descriptions) {
+    classes.push('resume-description-heading');
+  }
+
+  if (description.weight === 'BOLD') {
+    classes.push('resume-description-summary');
+  }
+
+  return classes.join(' ');
 }
 
 function getFontWeight(weight?: IRow.Description['weight']): CSSProperties {
@@ -124,6 +181,5 @@ const fontWeight: Record<IRow.FontWeightType, number> = {
   LIGHT: 300,
   REGULAR: 300,
   MEDIUM: 500,
-  // BOLD: 700,
-  BOLD: 500,
+  BOLD: 700,
 };

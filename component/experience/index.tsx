@@ -35,16 +35,18 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
     <div className="resume-section">
       <EmptyRowCol>
-        <Row className="pb-3">
+        <Row className="pb-3 resume-section-heading">
           <Col>
             <h4 className="resume-section-title" style={Style.blue}>
               EXPERIENCE {totalPeriod()}
             </h4>
           </Col>
         </Row>
-        {payload.list.map((item, index) => (
-          <ExperienceRow key={index.toString()} item={item} index={index} />
-        ))}
+        <div className="resume-section-content">
+          {payload.list.map((item, index) => (
+            <ExperienceRow key={index.toString()} item={item} index={index} />
+          ))}
+        </div>
       </EmptyRowCol>
     </div>
   );

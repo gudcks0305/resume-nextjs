@@ -15,8 +15,8 @@ export function CommonRows({
   return (
     <div className="resume-row">
       {index > 0 ? <hr /> : ''}
-      <Row>
-        <Col sm={12} md={3} className="text-md-end resume-meta-column">
+      <Row className="resume-item-grid">
+        <Col sm={12} md={3} className="text-md-end resume-meta-column resume-item-meta">
           <Row>
             <Col md={12}>
               <h4 className="resume-meta-title" style={Style.gray}>
@@ -26,7 +26,7 @@ export function CommonRows({
             {left.subTitle ? <Col md={12}>{left.subTitle}</Col> : ''}
           </Row>
         </Col>
-        <Col sm={12} md={9}>
+        <Col sm={12} md={9} className="resume-item-body">
           {right.title ? <h5 className="resume-item-title">{right.title}</h5> : ''}
           {right.subTitle ? (
             <i className="resume-subtitle" style={Style.gray}>

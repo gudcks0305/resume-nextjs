@@ -17,7 +17,7 @@ export const aimsWeb: IProject.Item = {
           descriptions: [
             {
               content:
-                'Windows 기반 ERP에 업무가 집중되어 팀별 분업, 배포, 운영 변경이 어렵고 실무 담당자의 반복 작업 비용이 컸습니다.',
+                'Windows 기반 ERP에 업무가 집중되어 기능 변경과 배포가 특정 인력에게 몰렸고, 실무 담당자의 반복 작업 비용이 컸습니다.',
             },
             {
               content:
@@ -31,15 +31,15 @@ export const aimsWeb: IProject.Item = {
           descriptions: [
             {
               content:
-                '<b>백엔드 1인 개발자</b>로 요구사항 분석, API 설계, FastAPI 기반 서비스 구현을 주도했습니다.',
+                '실무 담당자의 반복 업무를 웹 기능으로 분리하기 위해 <b>백엔드 1인 개발자</b>로 요구사항 분석, API 설계, FastAPI 기반 서비스 구현을 주도했습니다.',
             },
             {
               content:
-                'AWS Kubernetes 클러스터와 Docker 기반 배포 환경을 구성하고 ArgoCD 기반 GitOps CI/CD 파이프라인을 도입했습니다.',
+                '배포 대기와 운영 변경 부담을 줄이기 위해 AWS Kubernetes 클러스터, Docker 배포 환경, ArgoCD 기반 GitOps CI/CD 파이프라인을 도입했습니다.',
             },
             {
               content:
-                '기존 Windows 개발자 및 실무 담당자와 협업해 레거시 업무 흐름을 웹 기반 기능으로 재설계했습니다.',
+                '기존 Windows 개발자 및 실무 담당자와 요구사항을 조율하며 레거시 업무 흐름을 웹 기반 기능으로 재설계했습니다.',
             },
           ],
         },
@@ -49,14 +49,14 @@ export const aimsWeb: IProject.Item = {
           descriptions: [
             {
               content:
-                'Windows 기반 ERP를 클라우드 웹 환경으로 전환하여 팀별 업무 분담과 운영 효율을 개선했습니다.',
+                'Windows 기반 ERP를 클라우드 웹 환경으로 전환하여 특정 인력 의존도를 낮추고 팀별 업무 분담과 운영 효율을 개선했습니다.',
             },
             {
               content:
                 '업무 분업화와 자동화 흐름 개선으로 <b>업무 처리 속도 30% 이상 향상</b>에 기여했습니다.',
             },
             {
-              content: 'GitOps 기반 배포 자동화로 배포 반복 작업과 운영 변경 부담을 줄였습니다.',
+              content: 'GitOps 기반 배포 자동화로 배포 반복 작업과 변경 공유 비용을 줄였습니다.',
             },
           ],
         },

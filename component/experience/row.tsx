@@ -13,21 +13,23 @@ export default function ExperienceRow({
   return (
     <div className="resume-row">
       {index > 0 ? <hr /> : ''}
-      <Row>
-        <Col sm={12} md={3} className="text-md-end resume-meta-column">
+      <Row className="resume-item-grid">
+        <Col sm={12} md={3} className="text-md-end resume-meta-column resume-item-meta">
           {createWorkingPeriod(item.startedAt, item.endedAt)}
         </Col>
-        <Col sm={12} md={9}>
+        <Col sm={12} md={9} className="resume-item-body">
           <h4 className="resume-item-title">{item.title}</h4>
           <i className="resume-subtitle" style={Style.gray}>
             {item.position}
           </i>
-          <ul className="pt-3">
+          <ul className="pt-3 resume-experience-list">
             {item.descriptions.map((description, descIndex) => (
-              <li key={descIndex.toString()}>{parse(description)}</li>
+              <li key={descIndex.toString()} className={getDescriptionClassName(description)}>
+                {parse(normalizeDescription(description))}
+              </li>
             ))}
-            {createSkillKeywords(item.skillKeywords)}
           </ul>
+          {createSkillKeywords(item.skillKeywords)}
         </Col>
       </Row>
     </div>
@@ -39,22 +41,37 @@ function createSkillKeywords(skillKeywords?: string[]) {
     return '';
   }
   return (
-    <li>
-      <strong>Skill Keywords</strong>
-      <div>
-        {skillKeywords.map((keyword, index) => (
-          <Badge
-            style={Style.skillKeywordBadge}
-            key={index.toString()}
-            color="secondary"
-            className="me-1 resume-experience-badge"
-          >
-            {keyword}
-          </Badge>
-        ))}
-      </div>
-    </li>
+    <div className="resume-keyword-cloud">
+      {skillKeywords.map((keyword, index) => (
+        <Badge
+          style={Style.skillKeywordBadge}
+          key={index.toString()}
+          color="secondary"
+          className="resume-experience-badge"
+        >
+          {keyword}
+        </Badge>
+      ))}
+    </div>
   );
+}
+
+function normalizeDescription(description: string) {
+  return description.trim().replace(/^-+\s*/, '');
+}
+
+function getDescriptionClassName(description: string) {
+  const normalized = description.trim();
+
+  if (normalized.startsWith('-')) {
+    return 'resume-detail-item';
+  }
+
+  if (normalized.includes('<b>')) {
+    return 'resume-detail-heading';
+  }
+
+  return '';
 }
 
 function createWorkingPeriod(startedAtString: string, endedAtString?: string) {

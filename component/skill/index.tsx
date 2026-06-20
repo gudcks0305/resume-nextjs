@@ -23,7 +23,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
     <div className="resume-section">
       <EmptyRowCol>
-        <Row className="pb-3">
+        <Row className="pb-3 resume-section-heading">
           <Col>
             <h4 className="resume-section-title">
               <span style={Style.blue}>SKILL</span>
@@ -31,9 +31,11 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
             </h4>
           </Col>
         </Row>
-        {payload.skills.map((skill, index) => (
-          <SkillRow key={index.toString()} skill={skill} index={index} />
-        ))}
+        <div className="resume-section-content resume-skill-content">
+          {payload.skills.map((skill, index) => (
+            <SkillRow key={index.toString()} skill={skill} index={index} />
+          ))}
+        </div>
       </EmptyRowCol>
     </div>
   );

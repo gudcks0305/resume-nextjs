@@ -55,6 +55,13 @@ function serialize(item: Item): IRow.Payload {
     left: { title: `${startedAt} ~ ${endedAt}` },
     right: {
       ...item,
+      descriptions: item.courses
+        ? [
+            {
+              content: `주요 과목: ${item.courses.join(', ')}`,
+            },
+          ]
+        : undefined,
     },
   };
 }
