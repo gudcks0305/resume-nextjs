@@ -487,6 +487,11 @@ body {
     margin: 12mm;
   }
 
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
   .resume-container {
     max-width: none;
     color: #000;
@@ -571,9 +576,37 @@ body {
     text-decoration: none;
   }
 
-  .resume-container .badge {
-    color: #000 !important;
-    background: transparent !important;
-    border: 1px solid #999;
+  .resume-container .badge,
+  .resume-tech-stack-chip,
+  .resume-skill-chip,
+  .resume-description-heading {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .resume-tech-stack-chip,
+  .resume-skill-chip {
+    color: #4a5059 !important;
+    background: #f8f9fc !important;
+    border: 1px solid #e2e6ef !important;
+  }
+
+  .resume-description-heading {
+    color: #115e59 !important;
+    background: #f0fdfa !important;
+    border: 1px solid #99f6e4 !important;
+  }
+
+  .resume-skill-badge.badge,
+  .resume-experience-badge.badge {
+    color: #115e59 !important;
+    background: #f0fdfa !important;
+    border: 1px solid #99f6e4 !important;
+  }
+
+  .resume-contact-badge.badge {
+    color: #4a5059 !important;
+    background: #f8f9fc !important;
+    border: 1px solid #e2e6ef !important;
   }
 }
