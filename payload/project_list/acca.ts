@@ -24,7 +24,7 @@ export const acca: IProject.Item = {
             },
             {
               content:
-                '대규모 채용 시즌에는 안내 메일 발송 요청이 몰리며 DB CPU와 READ 부하가 급증했고, 발송 지연이 고객 VOC와 사업팀 문의로 이어졌습니다.',
+                '4만 명 규모 안내 발송에서 전형 전체 대상·본문 적재, 장기 tenant transaction, 순차 Kafka 발행이 메모리·DB 부하와 서버 재시작 후 중복 발송 위험으로 이어졌습니다.',
             },
           ],
         },
@@ -88,11 +88,23 @@ export const acca: IProject.Item = {
               descriptions: [
                 {
                   content:
-                    '채용 시즌 대량 안내 메일 지연을 줄이기 위해 AS-IS/TO-BE 성능 테스트로 DB READ 병목과 CPU 사용 패턴을 비교하고 개선 대상을 좁혔습니다.',
+                    '전형 전체 적재 구조를 200건 cursor batch와 최대 4개 묶음의 Kafka 비동기 callback으로 분리하고, 발행 결과를 조건부 bulk update로 반영했습니다.',
                 },
                 {
                   content:
-                    '메일 발송 경로의 DB churn/latency를 줄여 채용 시즌 발송 지연을 크게 줄였고, 고객 VOC와 사업팀 운영 부담을 완화했습니다.',
+                    '메일·SMS consumer를 4개 partition에 맞춰 병렬화하고 poll 크기를 10건으로 조정했으며, 상태 변경이 없는 이벤트는 DB 접근 전에 종료했습니다.',
+                },
+                {
+                  content:
+                    'SMS fallback polling을 100건 cursor 조회와 JDBC batch update로 전환하고 외부 API 호출을 transaction 밖으로 이동해 DB 점유 범위를 축소했습니다.',
+                },
+                {
+                  content:
+                    'CMS 발송 결과 조회를 애플리케이션 후처리에서 DB status/name filter와 page/count 조회로 전환해 대량 조회 비용과 상태 정합성 문제를 개선했습니다.',
+                },
+                {
+                  content:
+                    '행 잠금·처리 시도 ID로 중복 선점을 방지하고 발행 결과를 50건 또는 첫 결과 후 1초마다 반영했으며, 15분 WAITING 복구와 동일 발송 ID 재조회·graceful shutdown으로 상태별 재개 흐름을 구성했습니다.',
                 },
                 {
                   content:
@@ -116,7 +128,7 @@ export const acca: IProject.Item = {
           descriptions: [
             {
               content:
-                '채용 시즌 대량 안내 메일 발송 병목을 AS-IS/TO-BE 성능 비교로 해소해 고객 VOC와 사업팀/DevOps 운영 부담을 완화했습니다.',
+                'ST2 41,289명 부하 검증에서 약 14.5만 건의 Kafka 상태 event backlog를 <b>13분 34초 만에 해소</b>했고, 관련 <b>자동화 테스트 147건을 통과</b>했습니다.',
             },
             {
               content:
