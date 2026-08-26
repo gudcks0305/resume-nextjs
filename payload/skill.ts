@@ -1,13 +1,13 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const platformCloud: ISkill.Skill = {
-  category: 'Platform & Cloud',
+const backend: ISkill.Skill = {
+  category: 'Backend',
   items: [
-    { title: 'Kubernetes' },
-    { title: 'EKS' },
-    { title: 'ArgoCD' },
-    { title: 'AWS Lambda' },
-    { title: 'CloudWatch' },
+    { title: 'Java 21' },
+    { title: 'Spring Boot' },
+    { title: 'Spring Data JPA' },
+    { title: 'Querydsl' },
+    { title: 'Python / FastAPI' },
   ],
 };
 
@@ -22,14 +22,14 @@ const distributedData: ISkill.Skill = {
   ],
 };
 
-const backend: ISkill.Skill = {
-  category: 'Backend',
+const cloudOperations: ISkill.Skill = {
+  category: 'Cloud & Ops',
   items: [
-    { title: 'Java 21' },
-    { title: 'Spring Boot' },
-    { title: 'Spring Data JPA' },
-    { title: 'Querydsl' },
-    { title: 'Python / FastAPI' },
+    { title: 'Kubernetes' },
+    { title: 'EKS' },
+    { title: 'ArgoCD' },
+    { title: 'AWS Lambda' },
+    { title: 'CloudWatch' },
   ],
 };
 
@@ -55,7 +55,7 @@ const systemsOpenSource: ISkill.Skill = {
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [platformCloud, distributedData, backend, aiRuntime, systemsOpenSource],
+  skills: [backend, distributedData, cloudOperations, aiRuntime, systemsOpenSource],
 };
 
 export default skill;
