@@ -23,9 +23,6 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
     payload.latestUpdated,
     Util.LUXON_DATE_FORMAT.YYYY_LL_DD,
   );
-  const latestUpdatedByNow = Math.floor(
-    DateTime.local().diff(latestUpdated).milliseconds / 1000 / 60 / 60 / 24,
-  );
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
   // @ts-ignore
@@ -62,11 +59,9 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
           </div>
           <div className="resume-introduce-footer">
             <p className="text-end resume-updated">
-              <small>Latest Updated</small>{' '}
+              <small>Last updated</small>{' '}
               <Badge color="secondary">
-                {`${latestUpdated.toFormat(
-                  Util.LUXON_DATE_FORMAT.YYYY_DOT_LL_DOT_DD,
-                )} (D+${latestUpdatedByNow})`}
+                {latestUpdated.toFormat(Util.LUXON_DATE_FORMAT.YYYY_DOT_LL_DOT_DD)}
               </Badge>
             </p>
             <p className="text-end resume-sign" style={Style.sign}>
