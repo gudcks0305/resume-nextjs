@@ -3,6 +3,7 @@ import { IProject } from '../../component/project/IProject';
 export const pageone: IProject.Item = {
   title: '물류 플랫폼 자동화 서비스',
   startedAt: '2024-02',
+  endedAt: '2025-02',
   where: 'Grit Standard (백엔드 개발자, 6인 팀)',
   descriptions: [
     {
@@ -16,7 +17,7 @@ export const pageone: IProject.Item = {
           descriptions: [
             {
               content:
-                '수작업 중심의 세관 신고와 문서 처리 흐름 때문에 고객 응대 속도와 데이터 일관성이 업무 병목이었습니다.',
+                '수작업 중심의 물류 데이터 입력과 문서 처리 흐름 때문에 고객 응대 속도와 데이터 일관성이 업무 병목이었습니다.',
             },
             {
               content:
@@ -30,7 +31,7 @@ export const pageone: IProject.Item = {
           descriptions: [
             {
               content:
-                '반복 입력과 누락 가능성을 줄이기 위해 물류 도메인 테이블을 정규화하고 핵심 CRUD/API, 세관 연동 데이터 확보, 신고 자동화 흐름을 개발했습니다.',
+                '반복 입력과 누락 가능성을 줄이기 위해 물류 도메인 테이블을 정규화하고 핵심 CRUD/API와 외부 데이터 연동·업무 자동화 흐름을 개발했습니다.',
             },
             {
               content:
@@ -48,7 +49,7 @@ export const pageone: IProject.Item = {
           descriptions: [
             {
               content:
-                '세관 연동 데이터 확보와 신고 자동화 시스템 구축으로 고객 응대 병목이던 <b>세관 처리 속도 2배 향상</b>에 기여했습니다.',
+                '물류 업무의 반복 입력과 문서 처리를 자동화해 실무 담당자의 수작업 부담을 줄였습니다.',
             },
             {
               content:
@@ -56,7 +57,7 @@ export const pageone: IProject.Item = {
             },
             {
               content:
-                'AI 기반 PDF 분석 파이프라인으로 인보이스 데이터 추출, 저장, 신고서 생성을 자동화해 반복 수작업을 줄였습니다.',
+                'AI 기반 PDF 분석 파이프라인으로 인보이스 데이터 추출과 저장을 자동화했습니다.',
             },
           ],
         },

@@ -38,8 +38,7 @@ const openSource: IOpenSource.Payload = {
           weight: 'BOLD',
         },
         {
-          content:
-            '공개 핀 체크 수 기준 <b>1만 명 이상 사용자가 확인되는</b> 명조 맵스 생태계의 Windows-only 트래커를 macOS에서도 동작하도록 포팅했습니다.',
+          content: '명조 맵스 생태계의 Windows 전용 트래커를 macOS에서도 동작하도록 포팅했습니다.',
         },
         {
           content:
