@@ -30,6 +30,28 @@ const openSource: IOpenSource.Payload = {
       ],
     },
     {
+      title: 'FileBrowser (웹 파일 관리 도구)',
+      descriptions: [
+        {
+          content:
+            '<b>병렬 업로드 중 정상 전송이 중단되는 오류를 수정</b>하고, 유지보수자 리뷰 후 <b>upstream에 머지</b>되었습니다. (2026.09.13)',
+          weight: 'BOLD',
+        },
+        {
+          content:
+            '다른 파일이 전송 중인데도 개별 파일의 무진행 타이머가 업로드를 중단시키는 문제를 해결하기 위해, 병렬 업로드의 활동을 함께 추적하도록 개선했습니다. 전체 전송이 멈추면 기존처럼 10초 후 중단되도록 유지했습니다.',
+        },
+        {
+          content:
+            '병렬 전송·전체 정체·단일 업로드·재개 등을 검증하는 <b>회귀 테스트 9개</b>를 추가했습니다.',
+        },
+        {
+          content: 'Pull Request: https://github.com/gtsteffaniak/filebrowser/pull/2950',
+          href: 'https://github.com/gtsteffaniak/filebrowser/pull/2950',
+        },
+      ],
+    },
+    {
       title: 'Wuma Tracker',
       descriptions: [
         {
