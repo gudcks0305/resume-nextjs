@@ -21,7 +21,7 @@ const openSource: IOpenSource.Payload = {
         },
         {
           content:
-            '관련 링크: <a href="https://github.com/charmbracelet/vhs/issues/787">Issue #787</a> · <a href="https://github.com/charmbracelet/vhs/pull/788">PR #788</a> · <a href="https://github.com/charmbracelet/vhs">Repository (21k+ stars)</a>',
+            '관련 링크: <a href="https://github.com/charmbracelet/vhs/issues/787">Issue #787</a> · <a href="https://github.com/charmbracelet/vhs/pull/788">PR #788</a> · <a href="https://github.com/charmbracelet/vhs/releases/tag/v0.12.1">Release v0.12.1</a> · <a href="https://github.com/charmbracelet/vhs">Repository (21k+ stars)</a>',
         },
       ],
     },
@@ -68,8 +68,8 @@ const openSource: IOpenSource.Payload = {
             '병렬 전송·전체 정체·단일 업로드·재개 등을 검증하는 <b>회귀 테스트 9개</b>를 추가했습니다.',
         },
         {
-          content: 'Pull Request: https://github.com/gtsteffaniak/filebrowser/pull/2950',
-          href: 'https://github.com/gtsteffaniak/filebrowser/pull/2950',
+          content:
+            '관련 링크: <a href="https://github.com/gtsteffaniak/filebrowser/pull/2950">PR #2950</a> · <a href="https://github.com/gtsteffaniak/filebrowser/releases/tag/v2.0.7-beta">Release v2.0.7-beta</a>',
         },
       ],
     },
