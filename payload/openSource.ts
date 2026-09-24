@@ -4,6 +4,28 @@ const openSource: IOpenSource.Payload = {
   disable: false,
   list: [
     {
+      title: 'VHS (터미널 녹화·렌더링 도구)',
+      descriptions: [
+        {
+          content:
+            '<b>녹화 종료 직후 GIF 출력 파일이 생성되지 않던 오류를 수정</b>하고, 유지보수자 리뷰 후 원 저장소에 반영되었습니다. (2026.09.24)',
+          weight: 'BOLD',
+        },
+        {
+          content:
+            '녹화 lifecycle과 렌더링에 서로 다른 context를 사용하도록 분리하고, <code>ffmpeg</code> 인코딩 실패를 로그로만 남기지 않고 호출자에게 반환하도록 변경했습니다.',
+        },
+        {
+          content:
+            '<b>회귀 테스트</b>로 ffmpeg 누락, 정상 GIF 생성, 렌더링 직전 취소 동작을 검증하고 <code>go test -race ./...</code>, <code>go vet ./...</code>을 통과했습니다.',
+        },
+        {
+          content:
+            '관련 링크: <a href="https://github.com/charmbracelet/vhs/issues/787">Issue #787</a> · <a href="https://github.com/charmbracelet/vhs/pull/788">PR #788</a> · <a href="https://github.com/charmbracelet/vhs">Repository (21k+ stars)</a>',
+        },
+      ],
+    },
+    {
       title: 'CXX (Rust–C++ 연동 라이브러리)',
       descriptions: [
         {
