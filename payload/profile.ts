@@ -24,7 +24,7 @@ const profile: IProfile.Payload = {
     },
   ],
   notice: {
-    title: '☀️ 더 나은 실패를 하라 - 사뮈엘 베케트',
+    title: 'Java/Spring 백엔드 · 대량 비동기 처리 · LLM 런타임',
   },
 };
 

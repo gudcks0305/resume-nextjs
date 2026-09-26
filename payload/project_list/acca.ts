@@ -6,25 +6,12 @@ export const acca: IProject.Item = {
   where: '마이다스인 (백엔드 개발자)',
   descriptions: [
     {
-      content:
-        '메일·SMS 발송 파이프라인, LLM 면접·평가 파이프라인, 관리자 조회 개선의 <b>아키텍처 설계와 구현을 직접 담당</b>했습니다.',
-      weight: 'BOLD',
-    },
-    {
-      content:
-        '기술 스택: Java 21, Spring Boot 3.3, Kafka, MariaDB, MongoDB, Redis, Querydsl, Spring AI, Langchain4j, Langfuse',
-    },
-    {
       content: '대량 발송 파이프라인 재설계',
       weight: 'MEDIUM',
       descriptions: [
         {
           content:
-            '발송 대상·본문 전체 적재, 장시간 트랜잭션, 순차 Kafka 발행으로 발생하던 메모리·DB 부하와 재시작 후 중복 발송 위험을 개선했습니다.',
-        },
-        {
-          content:
-            '200건 단위 cursor batch와 Kafka 비동기 발행·병렬 consumer로 처리 구조를 재설계하고, 외부 API 호출을 트랜잭션 밖으로 분리했습니다.',
+            '발송 대상·본문 전체 적재와 장시간 트랜잭션, 순차 Kafka 발행이 메모리·DB 부하와 재시작 후 중복 발송 위험을 만들었습니다. 이를 200건 단위 cursor batch·Kafka 비동기 발행·병렬 consumer로 재설계하고 외부 API 호출을 트랜잭션 밖으로 옮겼습니다.',
         },
         {
           content:
@@ -42,7 +29,7 @@ export const acca: IProject.Item = {
       descriptions: [
         {
           content:
-            '응답 형식 불일치와 장시간 평가 중단에 대응하도록 질문 생성·답변 추적·평가 결과 발행 파이프라인을 설계하고, 영속 작업 큐와 재시도·복구 흐름을 구현했습니다.',
+            '응답 형식 불일치와 장시간 평가 중단에 대응해 질문 생성·답변 추적·평가 결과 발행에 영속 작업 큐와 재시도·복구 흐름을 구현했습니다.',
         },
         {
           content:
@@ -60,11 +47,7 @@ export const acca: IProject.Item = {
       descriptions: [
         {
           content:
-            '관리자 조회의 인덱스와 쿼리를 재설계해 <b>전체 스캔에서 인덱스 기반 조회로 전환</b>하고 조회 속도를 개선했습니다.',
-        },
-        {
-          content:
-            '대량 엑셀 결과표 생성에 SXSSFWorkbook과 페이지·배치 단위 조회를 적용해 메모리 사용 부담과 OOM 위험을 완화했습니다.',
+            '관리자 조회는 인덱스·쿼리 재설계로 <b>전체 스캔에서 인덱스 기반 조회로 전환</b>했습니다. 대량 엑셀 결과표는 SXSSFWorkbook과 페이지·배치 조회로 메모리 사용 부담과 OOM 위험을 완화했습니다.',
         },
       ],
     },

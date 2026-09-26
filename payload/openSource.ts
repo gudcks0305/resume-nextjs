@@ -13,15 +13,11 @@ const openSource: IOpenSource.Payload = {
         },
         {
           content:
-            '녹화 lifecycle과 렌더링에 서로 다른 context를 사용하도록 분리하고, <code>ffmpeg</code> 인코딩 실패를 로그로만 남기지 않고 호출자에게 반환하도록 변경했습니다.',
+            '녹화·렌더링 context를 분리하고 <code>ffmpeg</code> 인코딩 실패를 호출자에게 반환하도록 변경했습니다. 정상 GIF 생성·ffmpeg 누락·렌더링 직전 취소를 <b>회귀 테스트</b>로 검증하고 <code>go test -race ./...</code>와 <code>go vet ./...</code>을 통과했습니다.',
         },
         {
           content:
-            '<b>회귀 테스트</b>로 ffmpeg 누락, 정상 GIF 생성, 렌더링 직전 취소 동작을 검증하고 <code>go test -race ./...</code>, <code>go vet ./...</code>을 통과했습니다.',
-        },
-        {
-          content:
-            '관련 링크: <a href="https://github.com/charmbracelet/vhs/issues/787">Issue #787</a> · <a href="https://github.com/charmbracelet/vhs/pull/788">PR #788</a> · <a href="https://github.com/charmbracelet/vhs/releases/tag/v0.12.1">Release v0.12.1</a> · <a href="https://github.com/charmbracelet/vhs">Repository (21k+ stars)</a>',
+            '관련 링크: <a href="https://github.com/charmbracelet/vhs/issues/787">Issue #787</a> · <a href="https://github.com/charmbracelet/vhs/pull/788">PR #788</a> · <a href="https://github.com/charmbracelet/vhs/releases/tag/v0.12.1">Release v0.12.1</a>',
         },
       ],
     },
@@ -42,12 +38,8 @@ const openSource: IOpenSource.Payload = {
             '선택적인 공유 헤더 생성 실패가 빌드를 중단하지 않도록 처리하고, <code>OUT_DIR</code> 안에 필수 헤더 파일 또는 링크를 확보하도록 개선했습니다. 필수 헤더 생성 실패는 오류로 유지하며 <b>회귀 테스트 4개</b>를 추가했습니다.',
         },
         {
-          content: 'Pull Request: https://github.com/dtolnay/cxx/pull/1760',
-          href: 'https://github.com/dtolnay/cxx/pull/1760',
-        },
-        {
-          content: 'Release: CXX 1.0.202',
-          href: 'https://github.com/dtolnay/cxx/releases/tag/1.0.202',
+          content:
+            '관련 링크: <a href="https://github.com/dtolnay/cxx/pull/1760">PR #1760</a> · <a href="https://github.com/dtolnay/cxx/releases/tag/1.0.202">Release 1.0.202</a>',
         },
       ],
     },
@@ -61,11 +53,7 @@ const openSource: IOpenSource.Payload = {
         },
         {
           content:
-            '다른 파일이 전송 중인데도 개별 파일의 무진행 타이머가 업로드를 중단시키는 문제를 해결하기 위해, 병렬 업로드의 활동을 함께 추적하도록 개선했습니다. 전체 전송이 멈추면 기존처럼 10초 후 중단되도록 유지했습니다.',
-        },
-        {
-          content:
-            '병렬 전송·전체 정체·단일 업로드·재개 등을 검증하는 <b>회귀 테스트 9개</b>를 추가했습니다.',
+            '병렬 업로드 활동을 함께 추적하고 전체 전송이 멈춘 경우에는 기존 10초 중단 동작을 유지했습니다. 병렬 전송·전체 정체·재개 등을 다루는 <b>회귀 테스트 9개</b>를 추가했습니다.',
         },
         {
           content:
@@ -78,31 +66,20 @@ const openSource: IOpenSource.Payload = {
       descriptions: [
         {
           content:
-            '오픈소스 게임 맵 트래커 프로젝트에 <b>macOS 네이티브 트래커 지원</b>을 기여하고 PR을 머지했습니다.',
+            'Windows 전용 게임 맵 트래커에 <b>macOS 네이티브 지원</b>을 구현하고 PR을 머지했습니다.',
           weight: 'BOLD',
         },
         {
-          content: '명조 맵스 생태계의 Windows 전용 트래커를 macOS에서도 동작하도록 포팅했습니다.',
+          content:
+            '<b>Mach API</b>로 외부 프로세스 메모리를 읽고, <b>Mach-O 심볼 테이블</b>에서 <code>_GWorld</code> 주소를 계산해 버전별 오프셋 관리 부담을 줄였습니다.',
         },
         {
           content:
-            '<b>Mach API</b> 기반 외부 프로세스 메모리 읽기 백엔드를 구현하고, macOS 앱 서명 entitlement 및 ad-hoc DMG 빌드 문서를 추가했습니다.',
+            '공통 pointer-chain 로직을 <b>ProcessBackend trait</b>으로 정리하고, 앱 서명 entitlement·ad-hoc DMG 빌드 문서를 추가했습니다.',
         },
         {
           content:
-            '<b>Mach-O 심볼 테이블</b>에서 <code>_GWorld</code> 주소를 런타임에 계산해 Windows의 버전별 GWorld 오프셋 관리 부담을 macOS에서 줄였습니다.',
-        },
-        {
-          content:
-            'Windows/macOS 공통 pointer-chain 로직을 <b>ProcessBackend trait</b> 기반으로 정리하고, upstream 리뷰를 반영해 캐시/lock/clone 구조를 개선했습니다.',
-        },
-        {
-          content: 'Pull Request: https://github.com/wuwamoe/wuma-tracker/pull/6',
-          href: 'https://github.com/wuwamoe/wuma-tracker/pull/6',
-        },
-        {
-          content: 'Repository: https://github.com/wuwamoe/wuma-tracker',
-          href: 'https://github.com/wuwamoe/wuma-tracker',
+            '관련 링크: <a href="https://github.com/wuwamoe/wuma-tracker/pull/6">PR #6</a> · <a href="https://github.com/wuwamoe/wuma-tracker">Repository</a>',
         },
       ],
     },

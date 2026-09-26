@@ -27,8 +27,8 @@ function Yosume() {
       <Container className="resume-container" style={Style.global}>
         <Profile.Component payload={Payload.profile} />
         <Introduce.Component payload={Payload.introduce} />
-        <Skill.Component payload={Payload.skill} />
         <Experience.Component payload={Payload.experience} />
+        <Skill.Component payload={Payload.skill} />
         <Project.Component payload={Payload.project} />
         <OpenSource.Component payload={Payload.openSource} />
         <Education.Component payload={Payload.education} />
