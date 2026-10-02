@@ -925,7 +925,7 @@ body {
   }
 
   .resume-skill-content {
-    gap: 3pt;
+    gap: 1pt;
     padding: 0;
     break-inside: avoid;
   }
@@ -946,7 +946,7 @@ body {
   }
 
   .resume-skill-chip-row {
-    padding: 1pt 0;
+    padding: 0;
     break-inside: avoid;
   }
 
