@@ -44,7 +44,7 @@ export const pageone: IProject.Item = {
           ],
         },
         {
-          content: '결과',
+          content: '문서 처리 자동화 · Cold Start 10초 → 1초 수준',
           weight: 'MEDIUM',
           descriptions: [
             {

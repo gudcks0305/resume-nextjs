@@ -29,12 +29,12 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
     <div className="resume-section">
       <Row className="resume-introduce">
-        <Col sm={12} md={3}>
+        <Col xs={12}>
           <h2 className="resume-section-title" style={Style.blue}>
             INTRODUCE
           </h2>
         </Col>
-        <Col sm={12} md={9}>
+        <Col xs={12}>
           <div className="resume-introduce-card">
             {payload.contents[0] ? (
               <p className="resume-introduce-lead">{parse(payload.contents[0].content)}</p>

@@ -6,7 +6,7 @@ export const acca: IProject.Item = {
   where: '마이다스인 (백엔드 개발자)',
   descriptions: [
     {
-      content: '대량 발송 파이프라인 재설계',
+      content: '5만 건 외부 큐 적재 2시간 → 1분',
       weight: 'MEDIUM',
       descriptions: [
         {
@@ -24,7 +24,7 @@ export const acca: IProject.Item = {
       ],
     },
     {
-      content: 'LLM 면접·평가 런타임 설계',
+      content: 'LLM 면접·평가 작업의 재시도·복구 구조 설계',
       weight: 'MEDIUM',
       descriptions: [
         {
@@ -42,7 +42,7 @@ export const acca: IProject.Item = {
       ],
     },
     {
-      content: '관리자 조회·대량 결과표 처리 개선',
+      content: '전체 스캔을 인덱스 조회로 전환 · 대량 엑셀 메모리 부담 완화',
       weight: 'MEDIUM',
       descriptions: [
         {

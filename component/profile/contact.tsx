@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PropsWithChildren } from 'react';
-import { Row, Col, Badge } from 'reactstrap';
+import { Badge } from 'reactstrap';
 import { IProfile } from './IProfile';
 import { HrefTargetBlank } from '../common';
 
@@ -8,12 +8,10 @@ export default function ProfileContact({
   payload,
 }: PropsWithChildren<{ payload: IProfile.Contact }>) {
   return (
-    <Row className="pb-2">
-      <Col xs={1} className="text-end">
-        <FontAwesomeIcon icon={payload.icon} />
-      </Col>
-      <Col xs="auto">{createLink(payload)}</Col>
-    </Row>
+    <div className="resume-profile-contact">
+      <FontAwesomeIcon icon={payload.icon} />
+      {createLink(payload)}
+    </div>
   );
 }
 

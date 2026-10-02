@@ -44,7 +44,7 @@ export const mailbox: IProject.Item = {
           ],
         },
         {
-          content: '결과',
+          content: '이메일 수집·동기화 자동화 · 운영 모니터링',
           weight: 'MEDIUM',
           descriptions: [
             {

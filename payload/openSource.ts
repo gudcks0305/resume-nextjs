@@ -26,12 +26,12 @@ const openSource: IOpenSource.Payload = {
       descriptions: [
         {
           content:
-            'Rust와 C++ 간 안전한 상호 호출을 위한 바인딩을 생성하는 라이브러리로, <a href="https://chromium.googlesource.com/chromium/src.git/+/main/docs/rust/ffi.md">Chromium</a>과 <a href="https://security.googleblog.com/2021/06/rustc-interop-in-android-platform.html">Android Bluetooth</a>의 언어 간 연동에 사용된 사례가 있습니다.',
+            '샌드박스·파일시스템 권한 제한으로 공유 헤더 경로에 파일을 쓰거나 링크를 만들 수 없을 때 발생하던 <b>cxx-build 빌드 실패를 수정</b>하고, <b>1.0.202 릴리즈에 반영</b>되었습니다. (2026.09.12)',
+          weight: 'BOLD',
         },
         {
           content:
-            '샌드박스·파일시스템 권한 제한으로 공유 헤더 경로에 파일을 쓰거나 링크를 만들 수 없을 때 발생하던 <b>cxx-build 빌드 실패를 수정</b>하고, <b>1.0.202 릴리즈에 반영</b>되었습니다. (2026.09.12)',
-          weight: 'BOLD',
+            'Rust와 C++ 간 안전한 상호 호출을 위한 바인딩을 생성하는 라이브러리로, <a href="https://chromium.googlesource.com/chromium/src.git/+/main/docs/rust/ffi.md">Chromium</a>과 <a href="https://security.googleblog.com/2021/06/rustc-interop-in-android-platform.html">Android Bluetooth</a>의 언어 간 연동에 사용된 사례가 있습니다.',
         },
         {
           content:

@@ -3,9 +3,13 @@ import { Row, Col } from 'reactstrap';
 import { EmptyRowCol } from '.';
 import { Style } from './Style';
 
-export function CommonSection({ title, children }: PropsWithChildren<{ title: string }>) {
+export function CommonSection({
+  title,
+  className,
+  children,
+}: PropsWithChildren<{ title: string; className?: string }>) {
   return (
-    <div className="resume-section">
+    <div className={`resume-section${className ? ` ${className}` : ''}`}>
       <EmptyRowCol>
         <Row className="pb-3 resume-section-heading">
           <Col>

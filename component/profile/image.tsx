@@ -5,7 +5,7 @@ export default function ProfileImage({
   alt,
 }: PropsWithChildren<{ src: string; alt: string }>) {
   return (
-    <div className="pb-3 text-md-end text-center">
+    <div className="resume-profile-photo">
       <img className="img-fluid rounded resume-profile-image" src={src} alt={alt} />
     </div>
   );

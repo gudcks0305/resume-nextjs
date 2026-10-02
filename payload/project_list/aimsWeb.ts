@@ -44,7 +44,7 @@ export const aimsWeb: IProject.Item = {
           ],
         },
         {
-          content: '결과',
+          content: '반복 업무 웹 전환 · GitOps 배포 자동화',
           weight: 'MEDIUM',
           descriptions: [
             {
