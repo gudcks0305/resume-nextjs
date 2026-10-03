@@ -9,11 +9,6 @@ const etc: IEtc.Payload = {
       subTitle: '자격증',
       startedAt: '2022-06',
     },
-    {
-      title: 'OPIC',
-      subTitle: 'IM2',
-      startedAt: '2024-09',
-    },
   ],
 };
 
